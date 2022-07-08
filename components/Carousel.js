@@ -41,6 +41,7 @@ const Carousel = () => {
               src={beerTaps2}
               alt="The Anchor has a wide range of beer"
               className="d-block"
+              priority={true}
               // objectFit="cover"
             />
           </div>
@@ -49,6 +50,7 @@ const Carousel = () => {
               src={exterior}
               alt="The Anchor has a wide range of beer"
               className="d-block w-100"
+              priority={true}
               // objectFit="cover"
             />
             {/*<img src="..." className="d-block w-100" alt="...">*/}
@@ -58,6 +60,7 @@ const Carousel = () => {
               src={octopus}
               alt="The Anchor has a wide range of beer"
               className="d-block w-100"
+              priority={true}
               // objectFit="cover"
             />
             {/*<img src="..." className="d-block w-100" alt="...">*/}
