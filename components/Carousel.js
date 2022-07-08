@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import beerTaps2 from "../public/imgs/BEER-TAPS-2.jpg";
 import exterior from "../public/imgs/EXTERIOR.jpg";
-import octopus from "../public/imgs/octopus.jpg";
+import octopus from "../public/imgs/OCTOPUS.jpg";
 
 const Carousel = () => {
   return (
