@@ -42,6 +42,7 @@ const Carousel = () => {
               alt="The Anchor has a wide range of beer"
               className="d-block"
               priority={true}
+              placeholder="blur"
               // objectFit="cover"
             />
           </div>
@@ -51,6 +52,7 @@ const Carousel = () => {
               alt="The Anchor has a wide range of beer"
               className="d-block w-100"
               priority={true}
+              placeholder="blur"
               // objectFit="cover"
             />
             {/*<img src="..." className="d-block w-100" alt="...">*/}
@@ -61,6 +63,7 @@ const Carousel = () => {
               alt="The Anchor has a wide range of beer"
               className="d-block w-100"
               priority={true}
+              placeholder="blur"
               // objectFit="cover"
             />
             {/*<img src="..." className="d-block w-100" alt="...">*/}
