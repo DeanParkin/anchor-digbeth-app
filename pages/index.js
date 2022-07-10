@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Carousel from "../components/Carousel";
+import NewsLetter from "../components/NewsLetter";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
           </p>
         </div>
       </header>
+      <NewsLetter />
     </div>
   );
 }
