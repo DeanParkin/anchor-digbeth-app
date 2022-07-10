@@ -1,4 +1,5 @@
 import Nav from "./Nav";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
@@ -6,6 +7,7 @@ const Layout = ({ children }) => {
       <Nav />
 
       <div className="">{children}</div>
+      <Footer />
     </>
   );
 };

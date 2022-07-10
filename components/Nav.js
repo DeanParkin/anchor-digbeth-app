@@ -42,14 +42,14 @@ const Nav = () => {
                 </Link>
               </li>
               <li className="nav-item me-2">
-                <Link href="/about">
+                <Link href="/gallery">
                   <a className="nav-link">GALLERY</a>
                 </Link>
               </li>
               <li className="nav-item me-2">
-                <a className="nav-link" href="#">
-                  CONTACT
-                </a>
+                <Link href="/contact">
+                  <a className="nav-link">CONTACT</a>
+                </Link>
               </li>
             </ul>
             <form className="d-flex">
