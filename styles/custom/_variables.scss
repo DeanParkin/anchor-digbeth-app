@@ -44,6 +44,12 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
 
 $accordion-button-active-color: #000;
 
+//Inputs
+$input-border-width: 2px;
+$input-group-addon-border-color: #000;
+$input-border-radius: 0;
+$input-border-color: $primary;
+
 .nav-link {
   font-family: $navFont;
   font-size: 25px;
@@ -92,4 +98,8 @@ $accordion-button-active-color: #000;
 .address-container {
   display: flex;
   align-items: center;
+}
+
+.newsletter {
+  height: 200px;
 }
