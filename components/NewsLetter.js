@@ -21,7 +21,6 @@ const NewsLetter = () => {
               <input
                 type="email"
                 name="subscribe"
-                value=""
                 size="40"
                 className="form-control"
                 aria-required="true"
