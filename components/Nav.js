@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import styles from "../styles/NavBar.module.css";
 
 import logo from "../public/imgs/anchor-nav-logo.png"; // TODO - change the logo
 
@@ -33,7 +32,7 @@ const Nav = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
               <li className="nav-item me-2">
                 <Link href="/">
                   <a className="nav-link" aria-current="page">
@@ -42,8 +41,18 @@ const Nav = () => {
                 </Link>
               </li>
               <li className="nav-item me-2">
+                <Link href="/drinks">
+                  <a className="nav-link">Drinks</a>
+                </Link>
+              </li>
+              <li className="nav-item me-2">
                 <Link href="/gallery">
                   <a className="nav-link">GALLERY</a>
+                </Link>
+              </li>
+              <li className="nav-item me-2">
+                <Link href="/giftvoucher">
+                  <a className="nav-link">Gift Voucher</a>
                 </Link>
               </li>
               <li className="nav-item me-2">
