@@ -88,3 +88,8 @@ $accordion-button-active-color: #000;
 .home-address {
   font-family: $baskerville;
 }
+
+.address-container {
+  display: flex;
+  align-items: center;
+}

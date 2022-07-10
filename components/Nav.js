@@ -12,6 +12,9 @@ const Nav = () => {
       <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
         <div className="container-fluid">
           <div className="me-4 navWrap">
+            <h1 style={{ margin: "0px" }}>
+              <span hidden={true}>The Anchor Digbeth</span>
+            </h1>
             <Image
               src={logo}
               width={80}

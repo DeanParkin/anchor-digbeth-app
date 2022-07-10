@@ -52,7 +52,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg"></div>
+            <div className="col-lg" style={{ minHeight: "20px" }}></div>
 
             <div className="col-lg address-container">
               <address>
@@ -60,7 +60,7 @@ const Footer = () => {
                   THE ANCHOR, <br />
                   308 BRADFORD STREET, <br />
                   BIRMINGHAM, <br />
-                  B5 6ET{" "}
+                  B5 6ET
                 </p>
               </address>
             </div>
