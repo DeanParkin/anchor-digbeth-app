@@ -25,7 +25,7 @@ const NewsLetter = () => {
                 className="form-control"
                 aria-required="true"
                 aria-invalid="false"
-                placeholder="Enter email"
+                placeholder="Enter your email"
                 aria-labelledby="newsLetterHeader"
               />
 
