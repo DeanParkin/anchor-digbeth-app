@@ -21,6 +21,8 @@ const Nav = () => {
               height={80}
               alt="The Anchor has a wide range of beer"
               className="navbar-brand"
+              priority={true}
+              placeholder="blur"
             />
           </div>
           <button
