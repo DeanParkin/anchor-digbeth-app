@@ -18,11 +18,15 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </Layout>
       <CookieConsent
-        style={{ fontFamily: "Quicksand, sans-serif", textAlign: "center" }}
-        buttonStyle={{
-          fontFamily: "Quicksand, sans-serif",
-          background: "#B3D6D2",
-        }}
+        disableStyles={true}
+        debug={true}
+        // flipButtons={true}
+        location="bottom"
+        // style={{ fontFamily: "Quicksand, sans-serif", textAlign: "center" }}
+        buttonWrapperClasses="d-flex justify-content-end"
+        buttonClasses="btn btn-primary"
+        containerClasses="alert alert-primary fixed-bottom d-sm-flex justify-content-between"
+        contentClasses="text-capitalize text-center fs-4 d-flex"
         buttonText="I Understand"
         expires={1}
       >
