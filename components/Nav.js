@@ -9,7 +9,7 @@ import logo from "../public/imgs/anchor-nav-logo.png"; // TODO - change the logo
 const Nav = () => {
   return (
     <>
-      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
+      <nav className="navbar sticky-top shadow navbar-expand-lg navbar-light bg-primary">
         <div className="container-fluid">
           <div className="me-4 navWrap">
             <h1 style={{ margin: "0px" }}>

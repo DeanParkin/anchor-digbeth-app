@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import CookieConsent from "react-cookie-consent";
 import "../styles/main.scss";
 
+//TODO - Remove Debugging from cookie consent for production
 //TODO - update cookie consent date
 //TODO - add privacy policy link
 

@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import beerTaps2 from "../public/imgs/BEER-TAPS-2.jpg";
-import exterior from "../public/imgs/EXTERIOR.jpg";
-import octopus from "../public/imgs/OCTOPUS.jpg";
+import beerTaps2 from "../public/imgs/BEER-TAPS-2.webp";
+import exterior from "../public/imgs/EXTERIOR.webp";
+import octopus from "../public/imgs/OCTOPUS.webp";
 
 const Carousel = () => {
   return (
