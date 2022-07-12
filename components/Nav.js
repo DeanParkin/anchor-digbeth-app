@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import logo from "../public/imgs/anchor-nav-logo.png"; // TODO - change the logo
+import logo from "../public/imgs/anchor-nav-logo-small.png"; // TODO - change the logo
 
 // TODO - add the navbar links
 // TODO - add the navbar logo
@@ -17,12 +17,11 @@ const Nav = () => {
             </h1>
             <Image
               src={logo}
+              alt="The Anchor Digbeth"
               width={80}
               height={80}
-              alt="The Anchor has a wide range of beer"
               className="navbar-brand"
               priority={true}
-              placeholder="blur"
             />
           </div>
           <button
