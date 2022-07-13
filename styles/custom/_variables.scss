@@ -62,10 +62,10 @@ $input-border-color: $primary;
   letter-spacing: 0.1em;
 }
 
-.navWrap {
-  width: 80px;
-  height: 80px;
-}
+// .navWrap {
+//   width: 80px;
+//   height: 80px;
+// }
 
 .opening-hours p,
 .opening-hours div,
@@ -89,7 +89,7 @@ $input-border-color: $primary;
 }
 
 .opening-hours {
-  text-transform: uppercase;
+  //text-transform: uppercase;
   font-family: $navText;
   display: table;
   font-size: 16px;
@@ -97,15 +97,10 @@ $input-border-color: $primary;
   align-items: baseline;
 }
 
-.home-address {
+.address-container {
   font-family: $baskerville;
 }
 
-.address-container {
-  display: flex;
-  align-items: center;
-}
-
-.newsletter {
-  height: 200px;
-}
+// .newsletter {
+//   height: 200px;
+// }

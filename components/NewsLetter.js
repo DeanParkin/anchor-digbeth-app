@@ -2,22 +2,22 @@ import React from "react";
 
 const NewsLetter = () => {
   return (
-    <section className="newsletter bg-primary">
-      <div className="container h-100">
-        <div className="row">
-          <div className="col-md-6 mb-md-0 mb-5 d-flex justify-content-center align-items-center h-100">
-            <label
-              htmlFor="subscribe"
-              className="text-center"
-              id="newsLetterHeader"
-            >
-              LET&apos;S KEEP IN TOUCH.
-              <br />
-              JOIN US!
-            </label>
-          </div>
-          <div className="col-md-6 mb-md-0 mb-5">
-            <div className="input-group d-flex justify-content-center align-items-center">
+    <section className="bg-primary">
+      <div className="container">
+        <div className="row align-items-center justify-content-center">
+          {/* <div className="col-md-6 align-items-center"> */}
+          <label
+            htmlFor="subscribe"
+            className="text-center fs-2 col-md-6 align-items-center justify-content-center mt-3 my-md-4"
+            id="newsLetterHeader"
+          >
+            LET&apos;S KEEP IN TOUCH.
+            <br />
+            JOIN US!
+          </label>
+          {/* </div> */}
+          <div className="col-md-6 align-items-center my-4 my-md-5">
+            <div className="input-group">
               <input
                 type="email"
                 name="subscribe"

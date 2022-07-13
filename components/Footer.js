@@ -5,9 +5,9 @@ const Footer = () => {
     <>
       <footer>
         <div className="container footer-container text-light">
-          <div className="row">
-            <div className="col-lg">
-              <div className="opening-hours-container">
+          <div className="row my-4">
+            <div className="col-md-4">
+              <div className="opening-hours-container text-uppercase">
                 <div className="opening-hours">
                   <p className="opening-hours-day">Monday</p>
                   <div className="opening-hours-dots"></div>
@@ -52,18 +52,16 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-lg" style={{ minHeight: "20px" }}></div>
+            <div className="col-md-4 p-3"></div>
 
-            <div className="col-lg address-container">
-              <address>
-                <p className="home-address">
-                  THE ANCHOR, <br />
-                  308 BRADFORD STREET, <br />
-                  BIRMINGHAM, <br />
-                  B5 6ET
-                </p>
-              </address>
-            </div>
+            {/* <div className="col-md-4 address-container"> */}
+            <address className="col-md-4 address-container m-0">
+              THE ANCHOR, <br />
+              308 BRADFORD STREET, <br />
+              BIRMINGHAM, <br />
+              B5 6ET
+            </address>
+            {/* </div> */}
           </div>
           <p className="text-center">
             Please let us know how we&apos;re doing with a{" "}

@@ -11,8 +11,8 @@ const Nav = () => {
     <>
       <nav className="navbar sticky-top shadow navbar-expand-lg navbar-light bg-primary">
         <div className="container-fluid">
-          <div className="me-4 navWrap">
-            <h1 style={{ margin: "0px" }}>
+          <div className="me-4">
+            <h1 className="m-0">
               <span hidden={true}>The Anchor Digbeth</span>
             </h1>
             <Image
@@ -28,14 +28,14 @@ const Nav = () => {
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
               <li className="nav-item me-2">
                 <Link href="/">
