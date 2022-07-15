@@ -121,3 +121,14 @@ div div.input-group input.newsletter-submit.btn {
 // }
 
 $alert-padding-y: 0.5rem;
+
+// Drinks Menu Css
+button.btn.drinks-menu {
+  background-color: $primary;
+  color: #000;
+  border: $primary solid 2px;
+  &:hover {
+    background-color: #000;
+    color: $primary;
+  }
+}
