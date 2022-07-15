@@ -27,11 +27,11 @@ function MyApp({ Component, pageProps }) {
         buttonWrapperClasses="d-flex justify-content-end"
         buttonClasses="btn btn-primary"
         containerClasses="alert alert-primary fixed-bottom d-sm-flex justify-content-between"
-        contentClasses="text-capitalize text-center d-flex fs-5"
+        contentClasses="text-capitalize text-center d-flex fs-6"
         buttonText="I Understand"
         expires={1}
       >
-        This site uses Cookies
+        This site uses Cookies for performance improvements.
       </CookieConsent>
     </>
   );

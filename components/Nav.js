@@ -11,15 +11,15 @@ const Nav = () => {
     <>
       <nav className="navbar sticky-top shadow navbar-expand-lg navbar-light bg-primary">
         <div className="container-fluid">
-          <div className="me-4">
+          <div className="me-2" style={{ height: "60px" }}>
             <h1 className="m-0">
               <span hidden={true}>The Anchor Digbeth</span>
             </h1>
             <Image
               src={logo}
               alt="The Anchor Digbeth"
-              width={80}
-              height={80}
+              width={60}
+              height={60}
               className="navbar-brand"
               priority={true}
             />
