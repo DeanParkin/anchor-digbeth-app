@@ -13,21 +13,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Carousel />
-      <header className="text-light text-center">
-        <div className="container pt-3">
-          <h2 className="h2 text-primary"> Welcome To The Anchor Digbeth </h2>
-          <p> This is the first page of the Anchor Digbeth website </p>
-        </div>
-        <div className="container">
-          <p className="text-light">
-            The Anchor, as it is now known &#40;we dropped the
-            &#8216;Inn&#8217;&#41; is still a free house so we are free to
-            present you with the best and more interesting products available.
-            We don&apos;t intend to re-invent the wheel, our aim is simply to
-            provide a friendly space for everyone to enjoy great beer, wine,
-            coffee, Cocktails and spirits with great service. Simple.
-          </p>
-        </div>
+      <header className="text-light text-center container pt-3">
+        <h2 className="h2 text-primary"> Welcome To The Anchor Digbeth </h2>
+        <p>
+          The Anchor, as it is now known &#40;we dropped the
+          &#8216;Inn&#8217;&#41; is still a free house so we are free to present
+          you with the best and more interesting products available. We
+          don&apos;t intend to re-invent the wheel, our aim is simply to provide
+          a friendly space for everyone to enjoy great beer, wine, coffee,
+          Cocktails and spirits with great service. Simple.
+        </p>
       </header>
       <NewsLetter />
     </div>
