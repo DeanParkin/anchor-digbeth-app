@@ -14,7 +14,8 @@ export default function Home() {
       </Head>
       <Carousel />
       <header className="text-light text-center container pt-3">
-        <h2 className="h2 text-primary"> Welcome To The Anchor Digbeth </h2>
+        <p className="fs-5">Welcome To</p>
+        <h2 className="h2 text-primary">The Anchor Digbeth</h2>
         <p>
           The Anchor, as it is now known &#40;we dropped the
           &#8216;Inn&#8217;&#41; is still a free house so we are free to present
