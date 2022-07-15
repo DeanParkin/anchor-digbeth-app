@@ -1,11 +1,12 @@
 import React from "react";
+import ContactForm from "../components/ContactForm";
+import NewsLetter from "../components/NewsLetter";
 
 const contact = () => {
   return (
     <>
-      <div className="container">
-        <h1 className="text-light text-center ">Contact Us</h1>
-      </div>
+      <ContactForm />
+      <NewsLetter />
     </>
   );
 };

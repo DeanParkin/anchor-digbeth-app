@@ -20,16 +20,12 @@ export default function Home() {
         </div>
         <div className="container">
           <p className="text-light">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi
-            suscipit aut accusamus vero ad voluptates necessitatibus, id fuga
-            alias nesciunt recusandae similique ipsa sit labore, aspernatur
-            dicta veniam adipisci qui? Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. Cupiditate, eum voluptatibus a tempore iusto
-            sapiente officiis nostrum earum repellat fuga qui eligendi. Amet ut
-            deleniti voluptas eligendi, aut atque nam. Lorem ipsum, dolor sit
-            amet consectetur adipisicing elit. Debitis reprehenderit error earum
-            architecto ducimus reiciendis! Temporibus alias quam quas a animi
-            sed optio cum, eum sint? Neque amet quia maxime!
+            The Anchor, as it is now known &#40;we dropped the
+            &#8216;Inn&#8217;&#41; is still a free house so we are free to
+            present you with the best and more interesting products available.
+            We don&apos;t intend to re-invent the wheel, our aim is simply to
+            provide a friendly space for everyone to enjoy great beer, wine,
+            coffee, Cocktails and spirits with great service. Simple.
           </p>
         </div>
       </header>
