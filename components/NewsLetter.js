@@ -22,7 +22,7 @@ const NewsLetter = () => {
                 type="email"
                 name="subscribe"
                 size="40"
-                className="form-control"
+                className="form-control newsletter-input"
                 aria-required="true"
                 aria-invalid="false"
                 placeholder="Enter your email"
@@ -32,7 +32,7 @@ const NewsLetter = () => {
               <input
                 type="submit"
                 value="Send"
-                className="btn bg-dark text-primary"
+                className="btn newsletter-submit"
               />
               <p></p>
             </div>

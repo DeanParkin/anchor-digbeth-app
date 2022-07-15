@@ -56,6 +56,21 @@ $input-group-addon-border-color: #000;
 //$input-border-radius: 0;
 $input-border-color: $primary;
 
+div.input-group input.newsletter-input {
+  border-radius: 0;
+  border: #000 solid 2px;
+}
+div div.input-group input.newsletter-submit.btn {
+  background-color: #000;
+  color: $primary;
+  border-radius: 0;
+  border: #000 solid 2px;
+  &:hover {
+    background-color: $primary;
+    color: #000;
+  }
+}
+
 .nav-link {
   font-family: $navFont;
   font-size: 25px;
