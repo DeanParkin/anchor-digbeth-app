@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
         buttonWrapperClasses="d-flex justify-content-end"
         buttonClasses="btn btn-primary"
         containerClasses="alert alert-primary fixed-bottom d-sm-flex justify-content-between"
-        contentClasses="text-capitalize text-center fs-5 d-flex"
+        contentClasses="text-capitalize text-center d-flex fs-5"
         buttonText="I Understand"
         expires={1}
       >
