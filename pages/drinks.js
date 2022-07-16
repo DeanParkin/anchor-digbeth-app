@@ -3,8 +3,8 @@ import React from "react";
 const drinks = () => {
   return (
     <>
-      <div className="container text-light text-center">
-        <h1 className="text-primary">Drinks</h1>
+      <div className="container text-light text-center pt-3">
+        <h2 className="h2 text-primary baskerville-font">Drinks</h2>
         <p>
           Real and craft ales, wines, spirits, and cocktails. Traditional
           Thinking…Modern Drinking… <br /> Click below to view our Drinks Menu

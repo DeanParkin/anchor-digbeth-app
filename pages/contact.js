@@ -6,7 +6,6 @@ const contact = () => {
   return (
     <>
       <ContactForm />
-      <NewsLetter />
     </>
   );
 };

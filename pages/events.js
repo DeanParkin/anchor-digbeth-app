@@ -1,11 +1,13 @@
 import React from "react";
+import Gallery from "../components/Gallery";
 
 const events = () => {
   return (
     <>
-      <div className="container">
-        <h1 className="text-light text-center ">Events</h1>
+      <div className="container text-center pt-3">
+        <h2 className="h2 text-primary baskerville-font">Events</h2>
       </div>
+      <Gallery />
     </>
   );
 };

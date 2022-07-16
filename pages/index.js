@@ -15,7 +15,7 @@ export default function Home() {
       <Carousel />
       <header className="text-light text-center container pt-3">
         <p className="fs-5">Welcome To</p>
-        <h2 className="h2 text-primary">The Anchor Digbeth</h2>
+        <h2 className="h2 text-primary baskerville-font">The Anchor Digbeth</h2>
         <p className="my-2">
           The Anchor, as it is now known &#40;we dropped the
           &#8216;Inn&#8217;&#41; is still a free house so we are free to present
@@ -25,7 +25,6 @@ export default function Home() {
           Cocktails and spirits with great service. Simple.
         </p>
       </header>
-      <NewsLetter />
     </div>
   );
 }

@@ -8,7 +8,7 @@ const NewsLetter = () => {
           {/* <div className="col-md-6 align-items-center"> */}
           <label
             htmlFor="subscribe"
-            className="text-center fs-2 col-md-6 align-items-center justify-content-center mt-3 my-md-4"
+            className="text-center fs-2 col-md-6 align-items-center justify-content-center mt-3 my-md-4 baskerville-font"
             id="newsLetterHeader"
           >
             LET&apos;S KEEP IN TOUCH.

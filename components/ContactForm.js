@@ -2,16 +2,18 @@
 
 const ContactForm = () => {
   return (
-    <section className="container mb-5">
-      <h2 className="text-center h1 text-primary">Contact Us</h2>
-      <p className="text-light text-center">
-        If you would like to ask a question or book a table, then get in touch,
-        either send us an email to{" "}
-        <a href="mailto:Julian@theanchordigbeth.com">
-          Julian@theanchordigbeth.com
-        </a>
-        , contact via social media or use the form provided below.
-      </p>
+    <section className="container pt-3 mb-3">
+      <div className="text-center">
+        <h2 className="h2 text-primary baskerville-font">Contact Us</h2>
+        <p className="text-light">
+          If you would like to ask a question or book a table, then get in
+          touch, either send us an email to{" "}
+          <a href="mailto:Julian@theanchordigbeth.com">
+            Julian@theanchordigbeth.com
+          </a>
+          , contact via social media or use the form provided below.
+        </p>
+      </div>
       <form className="text-primary">
         <div className="form-group">
           <label htmlFor="name">Name</label>
