@@ -3,24 +3,26 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
-// Color system
-
 //================================================
 //Main fonts
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-$navFont: "Oswald", cursive;
+//================================================
 
+//Oswald font
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-$navText: "Oswald", cursive;
-
+//Roboto font
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
-$robotoFont: "Roboto Slab", serif;
-
+//Baskerville font
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
-$baskerville: "Libre Baskerville", serif;
-
+//Quicksand font
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
-$bodyText: "Quicksand", sans-serif;
+
+.baskerville-font {
+  font-family: "Libre Baskerville", serif;
+}
+
+.oswald-font {
+  font-family: "Oswald", cursive;
+}
 
 //185,715.6
 //93,449.59
@@ -72,7 +74,13 @@ div div.input-group input.newsletter-submit.btn {
 }
 
 .nav-link {
-  font-family: $navFont;
+  font-family: "Oswald", cursive;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+}
+
+.navbar-nav > li > a {
+  font-family: "Oswald", cursive;
   font-size: 25px;
   letter-spacing: 0.1em;
 }
@@ -105,15 +113,15 @@ div div.input-group input.newsletter-submit.btn {
 
 .opening-hours {
   //text-transform: uppercase;
-  font-family: $navText;
+  font-family: "Oswald", cursive;
   display: table;
-  font-size: 16px;
+  // font-size: 16px;
   white-space: nowrap;
   align-items: baseline;
 }
 
 .address-container {
-  font-family: $baskerville;
+  font-family: "Libre Baskerville", serif;
 }
 
 // .newsletter {
