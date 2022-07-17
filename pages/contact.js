@@ -29,14 +29,13 @@ export default function Contact() {
       if (response.status === 200) {
         console.log("Message was sent Successfully");
         messageSent = true;
-        //reset();
+        reset();
       }
     } catch (err) {
       console.error(err);
     }
-
-    //reset();
   }
+
   return (
     <section className="container pt-3 mb-3">
       <div className="text-center">
