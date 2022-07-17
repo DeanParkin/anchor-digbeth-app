@@ -3,7 +3,7 @@ import React from "react";
 export default function Drinks() {
   return (
     <>
-      <div className="container text-light text-center pt-3">
+      <div className="container text-light text-center pt-3 mb-4">
         <h2 className="h2 text-primary baskerville-font">Drinks</h2>
         <p>
           Real and craft ales, wines, spirits, and cocktails. Traditional
