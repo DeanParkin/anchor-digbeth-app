@@ -13,7 +13,9 @@ const Nav = () => {
         <div className="container-fluid">
           <div className="me-2" style={{ height: "60px" }}>
             <h1 className="m-0">
-              <span hidden={true}>The Anchor Digbeth</span>
+              <span hidden={true}>
+                The Anchor Digbeth, Traditional Thinking...Modern Drinking...
+              </span>
             </h1>
             <Image
               src={logo}

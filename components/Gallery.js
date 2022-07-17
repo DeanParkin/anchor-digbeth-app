@@ -5,6 +5,7 @@ const Gallery = () => {
     <>
       <div className="container text-center pt-3">
         <h2 className="h2 text-primary baskerville-font">Events</h2>
+        <p className="text-light">Check out some of our events</p>
       </div>
       <div className="container mt-4">
         <div className="row">
