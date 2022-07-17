@@ -26,8 +26,8 @@ export default function contact() {
       const response = await axios(config);
       if (response.status === 200) {
         console.log("Message was sent Successfully");
-        //reset();
         messageSent = true;
+        //reset();
       }
     } catch (err) {
       console.error(err);
