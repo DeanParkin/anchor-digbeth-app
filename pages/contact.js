@@ -1,6 +1,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+
 //import ContactForm from "../components/ContactForm";
+
+let messageSent = false;
 
 export default function contact() {
   const {
@@ -9,9 +13,26 @@ export default function contact() {
     formState: { errors },
     reset,
   } = useForm();
-  console.log(errors);
-  function onSubmitForm(data) {
-    console.log(data);
+
+  async function onSubmitForm(data) {
+    let config = {
+      method: "POST",
+      url: `${process.env.NEXT_PUBLIC_API_URL}/api/contact`,
+      headers: { "Content-Type": "application/json" },
+      data: data,
+    };
+
+    try {
+      const response = await axios(config);
+      if (response.status === 200) {
+        console.log("Message was sent Successfully");
+        //reset();
+        messageSent = true;
+      }
+    } catch (err) {
+      console.error(err);
+    }
+
     //reset();
   }
   return (
@@ -33,11 +54,13 @@ export default function contact() {
           <label htmlFor="name">Name</label>
           <input
             type="text"
-            className="form-control"
+            className={`form-control ${
+              errors.contactName ? "border-danger" : ""
+            }`}
             id="name"
             placeholder="Enter name"
             {...register("contactName", {
-              required: { value: true, message: "Name is required" },
+              required: { value: true, message: "Your Name is required" },
             })}
           />
           <span className="text-danger py-2">
@@ -47,12 +70,18 @@ export default function contact() {
         <div className="form-group">
           <label htmlFor="email">Email</label>
           <input
-            type="email"
-            className="form-control"
+            type="text"
+            className={`form-control ${
+              errors.contactEmail ? "border-danger" : ""
+            }`}
             id="email"
             placeholder="Enter email"
             {...register("contactEmail", {
-              required: { value: true, message: "Email is required" },
+              required: { value: true, message: "Your Email is required" },
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                message: "Invalid email address",
+              },
             })}
           />
           <span className="text-danger py-2">
@@ -63,7 +92,9 @@ export default function contact() {
         <div className="form-group">
           <label htmlFor="message">Message</label>
           <textarea
-            className="form-control"
+            className={`form-control ${
+              errors.contactMessage ? "border-danger" : ""
+            }`}
             id="message"
             rows="3"
             placeholder="Let us know how we can help"
@@ -83,6 +114,11 @@ export default function contact() {
           Submit
         </button>
       </form>
+      {messageSent && (
+        <div className="alert alert-success mt-2">
+          <p className="text-center">Message sent successfully</p>
+        </div>
+      )}
     </section>
   );
 }

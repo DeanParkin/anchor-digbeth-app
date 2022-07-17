@@ -39,6 +39,8 @@ $dark: #000;
 
 // stylelint-enable value-keyword-case
 
+$border-width: 3px;
+
 //================================================
 //Cookie Pop-up Alert
 //================================================
@@ -49,20 +51,19 @@ $alert-border-radius: 0;
 $accordion-button-active-color: #000;
 
 //Inputs
-$input-border-width: 2px;
 $input-group-addon-border-color: #000;
 //$input-border-radius: 0;
 $input-border-color: $primary;
 
 div.input-group input.newsletter-input {
   border-radius: 0;
-  border: #000 solid 2px;
+  border-color: #000;
 }
 div div.input-group input.newsletter-submit.btn {
   background-color: #000;
   color: $primary;
   border-radius: 0;
-  border: #000 solid 2px;
+  border-color: #000;
   &:hover {
     background-color: $primary;
     color: #000;
@@ -128,7 +129,7 @@ $alert-padding-y: 0.5rem;
 button.btn.drinks-menu {
   background-color: $primary;
   color: #000;
-  border: $primary solid 2px;
+  border-color: $primary;
   &:hover {
     background-color: #000;
     color: $primary;
