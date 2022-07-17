@@ -2,11 +2,14 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <div>
+    <>
+      <div className="container text-center pt-3">
+        <h2 className="h2 text-primary baskerville-font">Events</h2>
+      </div>
       <div className="container mt-4">
         <div className="row">
           <div className="col-md-4">
-            <div className="card mb-2">
+            <div className="card mb-2 border-primary">
               <img
                 src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                 className="card-img-top"
@@ -15,7 +18,7 @@ const Gallery = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card mb-2">
+            <div className="card mb-2 border-primary">
               <img
                 src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                 className="card-img-top"
@@ -34,7 +37,7 @@ const Gallery = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card mb-2">
+            <div className="card mb-2 text-bg-dark">
               <img
                 src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                 className="card-img-top"
@@ -54,7 +57,7 @@ const Gallery = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -2,6 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Carousel from "../components/Carousel";
 import NewsLetter from "../components/NewsLetter";
+import Drinks from "../components/Drinks";
+import Gallery from "../components/Gallery";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
@@ -25,6 +28,17 @@ export default function Home() {
           Cocktails and spirits with great service. Simple.
         </p>
       </header>
+      <main>
+        <section>
+          <Drinks />
+        </section>
+        <section>
+          <Gallery />
+        </section>
+        <section>
+          <ContactForm />
+        </section>
+      </main>
     </div>
   );
 }
