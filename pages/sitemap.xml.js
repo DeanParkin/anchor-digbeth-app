@@ -5,7 +5,7 @@ const Sitemap = () => {};
 
 export const getServerSideProps = ({ res }) => {
   const baseUrl = {
-    development: "http://localhost:3000",
+    development: "https://pland.netlify.app",
     production: "https://pland.netlify.app",
   }[process.env.NODE_ENV];
 
