@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>The Anchor | Home</title>
+        <title>The Anchor, Digbeth | Home</title>
         <meta
           name="description"
-          content="The Anchor is a place of comfort to enjoy real ale, ciders, craft beers, wine, spirits and even cocktails, modern drinking in a traditional boozer. The Anchor is also one of the oldest public free houses in Digbeth, Birmingham, England, dating back to 1797."
+          content="The Anchor, Digbeth is a place of comfort to enjoy real ale, ciders, craft beers, wine, spirits and even cocktails, modern drinking in a traditional boozer."
         />
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
