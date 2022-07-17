@@ -26,7 +26,7 @@ const Gallery = () => {
                 alt="..."
               />
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+                <h3 className="card-title">Card title</h3>
                 <p className="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card&apos;s content.
@@ -45,7 +45,7 @@ const Gallery = () => {
                 alt="..."
               />
               <div className="card-body bg-dark text-light">
-                <h5 className="card-title">Card title</h5>
+                <h3 className="card-title">Card title</h3>
                 <p className="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the card&apos;s content.

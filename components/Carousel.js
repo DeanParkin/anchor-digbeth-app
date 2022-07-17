@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-import image1 from "../public/imgs/BEER-TAPS-2.jpg";
-import image2 from "../public/imgs/EXTERIOR.jpg";
-import image3 from "../public/imgs/OCTOPUS.jpg";
+import image1 from "../public/imgs/BEER-TAPS-2.webp";
+import image2 from "../public/imgs/EXTERIOR.webp";
+import image3 from "../public/imgs/OCTOPUS.webp";
 
 let imageArray = [
   {
