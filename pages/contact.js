@@ -17,7 +17,9 @@ export default function Contact() {
   async function onSubmitForm(data) {
     let config = {
       method: "POST",
-      url: `${process.env.URL}/api/contact`,
+      url: `${
+        process.env.URL == "http://localhost:3000" ? process.env.URL : ""
+      }/api/contact`,
       headers: { "Content-Type": "application/json" },
       data: data,
     };
