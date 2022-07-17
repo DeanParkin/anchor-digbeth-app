@@ -6,7 +6,7 @@ import axios from "axios";
 
 let messageSent = false;
 
-export default function contact() {
+export default function Contact() {
   const {
     register,
     handleSubmit,
