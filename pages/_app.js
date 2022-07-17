@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
       </Layout>
       <CookieConsent
         disableStyles={true}
-        debug={true}
+        debug={false}
         // flipButtons={true}
         location="bottom"
         // style={{ fontFamily: "Quicksand, sans-serif", textAlign: "center" }}
@@ -29,7 +29,7 @@ function MyApp({ Component, pageProps }) {
         containerClasses="alert alert-primary fixed-bottom d-sm-flex justify-content-between"
         contentClasses="text-capitalize text-center d-flex fs-6"
         buttonText="I Understand"
-        expires={30}
+        expires={1}
       >
         This site uses Cookies for performance improvements.
       </CookieConsent>
