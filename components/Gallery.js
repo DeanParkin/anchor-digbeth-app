@@ -37,13 +37,13 @@ const Gallery = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <div className="card mb-2 text-bg-dark">
+            <div className="card mb-2 border-primary">
               <img
                 src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                 className="card-img-top"
                 alt="..."
               />
-              <div className="card-body">
+              <div className="card-body bg-dark text-light">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">
                   Some quick example text to build on the card title and make up
