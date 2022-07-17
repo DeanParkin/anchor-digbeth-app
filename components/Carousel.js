@@ -1,9 +1,36 @@
 import React from "react";
 import Image from "next/image";
 
-import beerTaps2 from "../public/imgs/BEER-TAPS-2.jpg";
-import exterior from "../public/imgs/EXTERIOR.jpg";
-import octopus from "../public/imgs/OCTOPUS.jpg";
+import image1 from "../public/imgs/BEER-TAPS-2.jpg";
+import image2 from "../public/imgs/EXTERIOR.jpg";
+import image3 from "../public/imgs/OCTOPUS.jpg";
+
+let imageArray = [
+  {
+    src: image1,
+    alt: "Beer Taps",
+    width: 1120,
+    height: 630,
+    layout: "fill",
+    className: "carousel-image",
+  },
+  {
+    src: image2,
+    alt: "Exterior",
+    width: 1120,
+    height: 630,
+    layout: "fill",
+    className: "carousel-image",
+  },
+  {
+    src: image3,
+    alt: "Octopus",
+    width: 1120,
+    height: 630,
+    layout: "fill",
+    className: "carousel-image",
+  },
+];
 
 const Carousel = () => {
   return (
@@ -38,7 +65,7 @@ const Carousel = () => {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <Image
-              src={beerTaps2}
+              src={image1}
               alt="The Anchor has a wide range of beer"
               className="d-block"
               priority={true}
@@ -51,7 +78,7 @@ const Carousel = () => {
           </div>
           <div className="carousel-item">
             <Image
-              src={exterior}
+              src={image2}
               alt="The Anchor has a wide range of beer"
               className="d-block w-100"
               priority={true}
@@ -65,7 +92,7 @@ const Carousel = () => {
           </div>
           <div className="carousel-item">
             <Image
-              src={octopus}
+              src={image3}
               alt="The Anchor has a wide range of beer"
               className="d-block w-100"
               priority={true}

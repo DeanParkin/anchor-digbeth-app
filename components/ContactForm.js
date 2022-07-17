@@ -1,6 +1,12 @@
-//Contact Form Component
+import { useForm } from "react-hook-form";
 
 const ContactForm = () => {
+  const { register, handleSubmit, errors, reset } = useForm();
+
+  function onSubmitForm(values) {
+    console.log(values);
+    //reset();
+  }
   return (
     <section className="container pt-3 mb-3">
       <div className="text-center">
@@ -14,7 +20,7 @@ const ContactForm = () => {
           , contact via social media or use the form provided below.
         </p>
       </div>
-      <form className="text-primary">
+      <form className="text-primary" onSubmit={handleSubmit(onSubmitForm)}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
@@ -22,6 +28,7 @@ const ContactForm = () => {
             className="form-control"
             id="name"
             placeholder="Enter name"
+            ref={register}
           />
         </div>
         <div className="form-group">
@@ -31,6 +38,7 @@ const ContactForm = () => {
             className="form-control"
             id="email"
             placeholder="Enter email"
+            ref={register}
           />
         </div>
         <div className="form-group">
@@ -40,6 +48,7 @@ const ContactForm = () => {
             id="message"
             rows="3"
             placeholder="Let us know how we can help"
+            ref={register}
           ></textarea>
         </div>
         <button type="submit" className="btn btn-primary mt-2">
