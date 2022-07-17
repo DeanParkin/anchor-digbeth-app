@@ -19,7 +19,7 @@ export default function Contact() {
       method: "POST",
       url: `${
         process.env.URL == "http://localhost:3000" ? process.env.URL : ""
-      }/api/contact`,
+      }/api/contactsend`,
       headers: { "Content-Type": "application/json" },
       data: data,
     };
