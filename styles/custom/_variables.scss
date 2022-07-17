@@ -7,15 +7,6 @@
 //Main fonts
 //================================================
 
-//Oswald font
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
-//Roboto font
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
-//Baskerville font
-@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap");
-//Quicksand font
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
-
 .baskerville-font {
   font-family: "Libre Baskerville", serif;
 }
@@ -24,8 +15,17 @@
   font-family: "Oswald", cursive;
 }
 
-//185,715.6
-//93,449.59
+//Bootstrap Font Overrides
+$font-family-sans-serif: "Quicksand", "Noto Sans", "Liberation Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+  "Liberation Mono", "Courier New", monospace;
+
+$font-size-root: 20px;
+
+//================================================
+//Colors
+//================================================
 
 // scss-docs-start theme-color-variables
 $primary: #b3d6d2;
@@ -37,15 +37,11 @@ $primary: #b3d6d2;
 $light: #fff; //$gray-100 !default;
 $dark: #000;
 
-//Fonts
-$font-family-sans-serif: "Quicksand", "Noto Sans", "Liberation Sans", sans-serif,
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-  "Liberation Mono", "Courier New", monospace;
-
-$font-size-root: 20px;
-
 // stylelint-enable value-keyword-case
+
+//================================================
+//Cookie Pop-up Alert
+//================================================
 
 $alert-margin-bottom: 0;
 $alert-border-radius: 0;
@@ -73,16 +69,14 @@ div div.input-group input.newsletter-submit.btn {
   }
 }
 
-.nav-link {
-  font-family: "Oswald", cursive;
+.navbar-nav > li > a.nav-link {
+  font-family: "Oswald", sans-serif;
   font-size: 25px;
   letter-spacing: 0.1em;
-}
-
-.navbar-nav > li > a {
-  font-family: "Oswald", cursive;
-  font-size: 25px;
-  letter-spacing: 0.1em;
+  font-weight: 700;
+  &:hover {
+    color: #000;
+  }
 }
 
 // .navWrap {
@@ -102,7 +96,7 @@ div div.input-group input.newsletter-submit.btn {
   margin-bottom: 10px;
   align-items: baseline;
   position: relative;
-  top: -5px;
+  top: -10px;
 }
 
 .opening-hours-time {
