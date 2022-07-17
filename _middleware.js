@@ -1,7 +1,7 @@
 //https://nextjs.org/docs/advanced-features/middleware
 //https://nextjs.org/docs/messages/nested-middleware
 
-https: import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(req) {
   const host = req.headers.get("host");
