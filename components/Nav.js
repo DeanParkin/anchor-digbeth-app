@@ -15,14 +15,16 @@ const Nav = () => {
             <h1 className="m-0">
               <span hidden={true}>The Anchor Digbeth, Birmingham</span>
             </h1>
-            <Image
-              src={logo}
-              alt="The Anchor Digbeth"
-              width={60}
-              height={60}
-              className="navbar-brand"
-              priority={true}
-            />
+            <div style={{ width: "60px", height: "60px" }}>
+              <Image
+                src={logo}
+                alt="The Anchor Digbeth"
+                width={120}
+                height={120}
+                className="navbar-brand"
+                priority={true}
+              />
+            </div>
           </div>
           <button
             className="navbar-toggler"
