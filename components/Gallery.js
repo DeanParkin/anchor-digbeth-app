@@ -14,7 +14,7 @@ const Gallery = () => {
               <img
                 src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                 className="card-img-top"
-                alt="..."
+                alt="sitting kitten"
               />
             </div>
           </div>
@@ -23,7 +23,7 @@ const Gallery = () => {
               <img
                 src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                 className="card-img-top"
-                alt="..."
+                alt="Kitty"
               />
               <div className="card-body">
                 <h3 className="card-title">Card 2 title</h3>
@@ -42,7 +42,7 @@ const Gallery = () => {
               <img
                 src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
                 className="card-img-top"
-                alt="..."
+                alt="little cat"
               />
               <div className="card-body bg-dark text-light">
                 <h3 className="card-title">Card 3 title</h3>

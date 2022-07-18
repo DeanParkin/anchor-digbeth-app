@@ -79,7 +79,7 @@ const Carousel = () => {
           <div className="carousel-item">
             <Image
               src={image2}
-              alt="The Anchor has a wide range of beer"
+              alt="Front exterior of the Anchor"
               className="d-block w-100"
               priority={true}
               placeholder="blur"
@@ -93,7 +93,7 @@ const Carousel = () => {
           <div className="carousel-item">
             <Image
               src={image3}
-              alt="The Anchor has a wide range of beer"
+              alt="Octopus art in the Anchor courtyard"
               className="d-block w-100"
               priority={true}
               placeholder="blur"
