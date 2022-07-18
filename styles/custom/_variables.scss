@@ -136,20 +136,22 @@ button.btn.drinks-menu {
   }
 }
 .social-icon {
+  //background-color: inherit;
   width: 3rem;
   height: 3rem;
   //border-radius: 50%;
   //font-size: 1.5rem;
   line-height: 7px;
   text-align: center;
-  color: $primary;
+  //color: $primary;
   //background: #8f8f8f;
   transition: all 0.35s ease-in-out;
 }
-
-.social-icon:hover {
-  //background: #212429;
+.social-link {
   color: #fff;
+  &:hover {
+    color: $primary;
+  }
 }
 
 .copyright {

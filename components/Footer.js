@@ -4,13 +4,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagramSquare,
+  faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
     <>
-      <footer className="sticky-bottom mt-5">
+      <footer className="sticky-bottom mt-3">
         <NewsLetter />
         <div className="container footer-container text-light">
           <div className="row my-4 fs-5">
@@ -77,13 +78,13 @@ const Footer = () => {
           </p>
         </div>
         <div className="social-container border-top border-primary">
-          <div className="container d-flex justify-content-around fs-3 align-items-center">
+          <div className="container d-flex justify-content-around fs-3 align-items-center py-4">
             <a
               href="https://www.facebook.com/TheAnchorDigbeth/"
               target="_blank"
+              className="social-link"
               rel="noopener noreferrer"
               aria-label="Facebook Link"
-              className="py-3"
             >
               <FontAwesomeIcon
                 icon={faFacebook}
@@ -99,18 +100,20 @@ const Footer = () => {
             </a>
             <a
               href="https://www.instagram.com/theanchordigbeth"
-              id="ig-link"
               aria-label="Instagram Link"
+              className="social-link"
             >
               <FontAwesomeIcon
                 icon={faInstagramSquare}
                 className="social-icon"
+                id="ig-link"
                 size="sm"
               ></FontAwesomeIcon>
             </a>
             <a
               href="https://twitter.com/anchordigbeth"
               id="tw-link"
+              className="social-link"
               aria-label="Twitter Link"
             >
               <FontAwesomeIcon
@@ -149,7 +152,7 @@ const Footer = () => {
             </div>
             <div className="row">
               <div className="col-md-12">
-                <p className="text-center text-light">
+                <p className="text-center text-light pb-4">
                   Website developed by{" "}
                   <a href="https://www.anchor.co.uk">Plan;D</a>
                 </p>
