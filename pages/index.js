@@ -25,7 +25,7 @@ export default function Home() {
           <p className="h2 text-primary baskerville-font">The Anchor Digbeth</p>
         </div>
         <div className="d-flex justify-content-center">
-          <p className="my-2">
+          <p className="my-2 text-container">
             The Anchor, as it is now known &#40;we dropped the
             &#8216;Inn&#8217;&#41; is still a free house so we are free to
             present you with the best and more interesting products available.
