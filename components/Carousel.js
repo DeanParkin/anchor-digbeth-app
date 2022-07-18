@@ -82,7 +82,7 @@ const Carousel = () => {
               alt="Front exterior of the Anchor"
               className="d-block w-100"
               //priority={true}
-              placeholder="blur"
+              //placeholder="blur"
               width={1350}
               height={600}
 
@@ -96,7 +96,7 @@ const Carousel = () => {
               alt="Octopus art in the Anchor courtyard"
               className="d-block w-100"
               //priority={true}
-              placeholder="blur"
+              //placeholder="blur"
               width={1350}
               height={600}
               // objectFit="cover"
