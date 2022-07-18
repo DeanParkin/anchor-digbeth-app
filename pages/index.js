@@ -3,7 +3,7 @@ import Image from "next/image";
 import Carousel from "../components/Carousel";
 import NewsLetter from "../components/NewsLetter";
 import Drinks from "../components/Drinks";
-import Gallery from "../components/Gallery";
+import Events from "../components/Events";
 import ContactForm from "../components/ContactForm";
 
 export default function Home() {
@@ -40,7 +40,7 @@ export default function Home() {
           <Drinks />
         </section>
         <section>
-          <Gallery />
+          <Events />
         </section>
         <section>
           <ContactForm />

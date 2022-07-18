@@ -1,10 +1,10 @@
 import React from "react";
-import Gallery from "../components/Gallery";
+import Events from "../components/Events.js";
 
 const events = () => {
   return (
     <>
-      <Gallery />
+      <Events />
     </>
   );
 };
