@@ -136,12 +136,12 @@ const Footer = () => {
                 shareData();
               }}
               className="social-link"
-              aria-label="Page Share Link"
             >
               <FontAwesomeIcon
                 icon={faShareNodes}
                 className="social-icon"
                 size="sm"
+                aria-label="Page Share Link"
               />
             </div>
           </div>
