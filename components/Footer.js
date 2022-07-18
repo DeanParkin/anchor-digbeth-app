@@ -6,8 +6,22 @@ import {
   faInstagramSquare,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-
+import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
+  const shareData = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: "The Anchor Digbeth",
+          text: "Traditional Thinking...Modern Drinking...",
+          url: "https://theanchordigbeth.com",
+        });
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  };
+
   return (
     <>
       <footer className="sticky-bottom mt-3">
@@ -115,6 +129,19 @@ const Footer = () => {
                 size="sm"
               ></FontAwesomeIcon>
             </a>
+            <div
+              onClick={() => {
+                shareData();
+              }}
+              className="social-link"
+              aria-label="Twitter Link"
+            >
+              <FontAwesomeIcon
+                icon={faShareNodes}
+                className="social-icon"
+                size="sm"
+              />
+            </div>
           </div>
         </div>
         <div className="copyright-container">
