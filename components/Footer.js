@@ -1,5 +1,13 @@
 import React from "react";
 import NewsLetter from "./NewsLetter";
+import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagramSquare,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
@@ -7,7 +15,7 @@ const Footer = () => {
       <footer className="sticky-bottom mt-5">
         <NewsLetter />
         <div className="container footer-container text-light">
-          <div className="row my-4">
+          <div className="row my-4 fs-5">
             <div className="col-md-4">
               <div className="opening-hours-container text-uppercase">
                 <div className="opening-hours">
@@ -65,33 +73,91 @@ const Footer = () => {
             </address>
             {/* </div> */}
           </div>
-          <p className="text-center">
+          <p className="text-center fs-5">
             Please let us know how we&apos;re doing with a{" "}
             <a href="https://g.page/TheAnchorDigbeth?share">review</a>
           </p>
         </div>
-        <div className="social-container">
-          <a
-            href="https://www.facebook.com/TheAnchorDigbeth/"
-            id="fb-link"
-            aria-label="Facebook Link"
-          >
-            <i className="fab fa-facebook-square" aria-hidden="true"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/theanchordigbeth"
-            id="ig-link"
-            aria-label="Instagram Link"
-          >
-            <i className="fab fa-instagram-square" aria-hidden="true"></i>
-          </a>
-          <a
-            href="https://twitter.com/anchordigbeth"
-            id="tw-link"
-            aria-label="Twitter Link"
-          >
-            <i className="fab fa-twitter" aria-hidden="true"></i>
-          </a>
+        <div className="social-container border-top border-primary">
+          <div className="container d-flex justify-content-around fs-3 align-items-center">
+            <a
+              href="https://www.facebook.com/TheAnchorDigbeth/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook Link"
+              className="py-3"
+            >
+              <FontAwesomeIcon
+                icon={faFacebook}
+                className="social-icon"
+                size="sm"
+              ></FontAwesomeIcon>
+              {/* <FontAwesomeIcon
+              icon={["fab", faFacebook]}
+              inverse
+              size="sm"
+              aria-hidden="true"
+            /> */}
+            </a>
+            <a
+              href="https://www.instagram.com/theanchordigbeth"
+              id="ig-link"
+              aria-label="Instagram Link"
+            >
+              <FontAwesomeIcon
+                icon={faInstagramSquare}
+                className="social-icon"
+                size="sm"
+              ></FontAwesomeIcon>
+            </a>
+            <a
+              href="https://twitter.com/anchordigbeth"
+              id="tw-link"
+              aria-label="Twitter Link"
+            >
+              <FontAwesomeIcon
+                icon={faTwitter}
+                className="social-icon"
+                size="sm"
+              ></FontAwesomeIcon>
+            </a>
+          </div>
+        </div>
+        <div className="copyright-container">
+          <div className="container">
+            <div className="copyright-container justify-content-center text-center fs-6">
+              <p className="copyright mb-1">
+                <span className="text-light">
+                  &copy; 2020 - {new Date().getFullYear()} THE ANCHOR. ALL
+                  RIGHTS RESERVED.
+                </span>
+              </p>
+              <a
+                href="https://www.anchor.co.uk/privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="privacy-policy-link px-3 mb-3"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="https://www.anchor.co.uk/privacy-policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="privacy-policy-link mb-3"
+              >
+                Terms &amp; Conditions
+              </a>
+            </div>
+            <div className="row">
+              <div className="col-md-12">
+                <p className="text-center text-light">
+                  Website developed by{" "}
+                  <a href="https://www.anchor.co.uk">Plan;D</a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </footer>
     </>
