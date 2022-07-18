@@ -1,6 +1,5 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
-import NewsLetter from "./NewsLetter";
 import Head from "next/head";
 
 const Layout = ({ children }) => {

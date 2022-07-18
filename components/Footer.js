@@ -1,13 +1,11 @@
 import React from "react";
 import NewsLetter from "./NewsLetter";
-import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagramSquare,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
-import { faCopyright } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
