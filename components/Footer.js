@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
   faInstagramSquare,
-  faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -91,12 +90,6 @@ const Footer = () => {
                 className="social-icon"
                 size="sm"
               ></FontAwesomeIcon>
-              {/* <FontAwesomeIcon
-              icon={["fab", faFacebook]}
-              inverse
-              size="sm"
-              aria-hidden="true"
-            /> */}
             </a>
             <a
               href="https://www.instagram.com/theanchordigbeth"
