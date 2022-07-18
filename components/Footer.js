@@ -85,10 +85,12 @@ const Footer = () => {
             </address>
             {/* </div> */}
           </div>
-          <p className="text-center fs-5">
-            Please let us know how we&apos;re doing with a{" "}
-            <a href="https://g.page/TheAnchorDigbeth?share">review</a>
-          </p>
+          <div className="d-flex justify-content-center">
+            <p className="text-center fs-5">
+              Please let us know how we&apos;re doing with a{" "}
+              <a href="https://g.page/TheAnchorDigbeth?share">review</a>
+            </p>
+          </div>
         </div>
         <div className="social-container border-top border-primary">
           <div className="container d-flex justify-content-around fs-3 align-items-center py-4">
@@ -170,13 +172,11 @@ const Footer = () => {
                 Terms &amp; Conditions
               </a>
             </div>
-            <div className="row">
-              <div className="col-md-12">
-                <p className="text-center text-light pb-4">
-                  Website developed by{" "}
-                  <a href="https://www.anchor.co.uk">Plan;D</a>
-                </p>
-              </div>
+            <div className="d-flex justify-content-center">
+              <p className="text-center text-light pb-4">
+                Website developed by{" "}
+                <a href="https://www.anchor.co.uk">Plan;D</a>
+              </p>
             </div>
           </div>
         </div>
