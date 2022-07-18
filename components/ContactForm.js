@@ -90,7 +90,6 @@ export default function ContactForm() {
             {errors?.contactEmail?.message}
           </span>
         </div>
-
         <div className="form-group">
           <label htmlFor="message">Message</label>
           <textarea
@@ -112,9 +111,11 @@ export default function ContactForm() {
             {errors?.contactMessage?.message}
           </span>
         </div>
-        <button type="submit" className="btn btn-primary mt-2">
-          Submit
-        </button>
+        <div className="justify-content-end d-flex d-grid">
+          <button type="submit" className="btn btn-primary mt-2">
+            Submit
+          </button>
+        </div>
       </form>
       {messageSent && (
         <div className="alert alert-success mt-2">
