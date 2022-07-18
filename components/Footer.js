@@ -136,7 +136,7 @@ const Footer = () => {
                 shareData();
               }}
               className="social-link"
-              aria-label="Twitter Link"
+              aria-label="Page Share Link"
             >
               <FontAwesomeIcon
                 icon={faShareNodes}
