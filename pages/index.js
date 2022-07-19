@@ -11,12 +11,6 @@ export default function Home() {
     <div>
       <Head>
         <title>The Anchor, Digbeth | Home</title>
-        <meta
-          name="description"
-          content="The Anchor, Digbeth is a place of comfort to enjoy real ale, ciders, craft beers, wine, spirits and even cocktails, modern drinking in a traditional boozer."
-        />
-        <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Carousel />
       <header className="text-light text-center container pt-3">

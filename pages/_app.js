@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Layout from "../components/Layout";
+import Nav from "../components/Nav";
 import CookieConsent from "react-cookie-consent";
 import "../styles/main.scss";
 
@@ -15,9 +15,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      <Layout>
+      <Nav>
         <Component {...pageProps} />
-      </Layout>
+      </Nav>
       <CookieConsent
         disableStyles={true}
         debug={false}

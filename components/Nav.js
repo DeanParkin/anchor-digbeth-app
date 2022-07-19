@@ -1,14 +1,56 @@
 import Link from "next/link";
 import Image from "next/image";
-
-import logo from "../public/imgs/anchor-nav-logo-small.png"; // TODO - change the logo
-
+import SEO from "../components/SEO";
+import Footer from "../components/Footer";
+import logo from "../public/imgs/anchor-nav-logo-small.png";
+import { useRouter } from "next/router"; // TODO - change the logo
+import Router from "next/router";
+//import { Collapse } from "bootstrap";
+//import * as bootstrap from "bootstrap";
 // TODO - add the navbar links
 // TODO - add the navbar logo
 
-const Nav = () => {
+export default function Nav(props) {
+  const route = useRouter().route.slice(1);
+  const router = useRouter();
+
+  let home =
+    route == ""
+      ? { class: "nav-link active", aria: "page", href: "/" }
+      : { class: "nav-link", aria: "", href: "/" };
+  let drinks =
+    route == "drinks"
+      ? { class: "nav-link active", aria: "page", href: "/" }
+      : { class: "nav-link", aria: "", href: "/" };
+  let events =
+    route == "events"
+      ? { class: "nav-link active", aria: "page", href: "/" }
+      : { class: "nav-link", aria: "", href: "/" };
+  let contact =
+    route == "contact"
+      ? { class: "nav-link active", aria: "page", href: "/" }
+      : { class: "nav-link", aria: "", href: "/" };
+  let gallery =
+    route == "gallery"
+      ? { class: "nav-link active", aria: "page", href: "/" }
+      : { class: "nav-link", aria: "", href: "/" };
+  let giftvoucher =
+    route == "giftvoucher"
+      ? { class: "nav-link active", aria: "page", href: "/" }
+      : { class: "nav-link", aria: "", href: "/" };
+
+  const handleClick = (e) => {
+    //e.preventDefault();
+    router.push(e.target.href);
+    // let tog = document.getElementById("navbarToggler");
+    // () => {
+    //   tog.collapse({ toggle: false }).collapse("hide");
+    // };
+  };
+
   return (
     <>
+      <SEO />
       <nav className="navbar sticky-top shadow navbar-expand-lg navbar-light bg-primary">
         <div className="container-fluid">
           <div className="me-2" style={{ height: "60px" }}>
@@ -37,83 +79,95 @@ const Nav = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapsing navbar-collapse" id="navbarToggler">
+          <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
               <li className="nav-item me-2">
-                <Link href="/">
-                  <a
-                    className="nav-link"
-                    aria-current="page"
-                    //data-bs-toggle="collapse"
-                    //data-bs-target="#navbarToggler"
-                  >
-                    HOME
-                  </a>
-                </Link>
+                <a
+                  href="/"
+                  className={home.class}
+                  onClick={handleClick}
+                  //aria-current={home.aria}
+                  //aria-current="page"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarToggler"
+                >
+                  HOME
+                </a>
               </li>
               <li
                 className="nav-item me-2"
                 //data-bs-toggle="collapse"
               >
-                <Link href="/drinks">
-                  <a
-                    className="nav-link"
-                    //data-bs-target="#navbarToggler"
-                  >
-                    Drinks
-                  </a>
-                </Link>
+                <a
+                  href="/drinks"
+                  className={drinks.class}
+                  onClick={handleClick}
+                  //aria-current={home.aria}
+                  //aria-current="page"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarToggler"
+                >
+                  Drinks
+                </a>
               </li>
               <li className="nav-item me-2">
-                <Link href="/gallery">
-                  <a
-                    className="nav-link"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggler"
-                  >
-                    GALLERY
-                  </a>
-                </Link>
+                <a
+                  href="/gallery"
+                  className={gallery.class}
+                  onClick={handleClick}
+                  //aria-current={home.aria}
+                  //aria-current="page"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarToggler"
+                >
+                  Gallery
+                </a>
               </li>
               <li className="nav-item me-2">
-                <Link href="/events">
-                  <a
-                    className="nav-link"
-                    //data-bs-toggle="collapse"
-                    //data-bs-target="#navbarToggler"
-                  >
-                    Events
-                  </a>
-                </Link>
+                <a
+                  href="/events"
+                  className={events.class}
+                  onClick={handleClick}
+                  //aria-current={home.aria}
+                  //aria-current="page"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarToggler"
+                >
+                  Events
+                </a>
               </li>
               <li className="nav-item me-2">
-                <Link href="/giftvoucher">
-                  <a
-                    className="nav-link"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggler"
-                  >
-                    Gift Voucher
-                  </a>
-                </Link>
+                <a
+                  href="/giftvoucher"
+                  className={giftvoucher.class}
+                  onClick={handleClick}
+                  //aria-current={home.aria}
+                  //aria-current="page"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarToggler"
+                >
+                  gift voucher
+                </a>
               </li>
               <li className="nav-item me-2">
-                <Link href="/contact">
-                  <a
-                    className="nav-link"
-                    //data-bs-toggle="collapse"
-                    //data-bs-target="#navbarToggler"
-                  >
-                    CONTACT
-                  </a>
-                </Link>
+                <a
+                  href="/contact"
+                  className={contact.class}
+                  onClick={handleClick}
+                  //aria-current={home.aria}
+                  //aria-current="page"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarToggler"
+                >
+                  contact
+                </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      {props.children}
+      <Footer />
     </>
   );
-};
-
-export default Nav;
+}
