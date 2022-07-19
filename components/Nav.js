@@ -41,34 +41,69 @@ const Nav = () => {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
               <li className="nav-item me-2">
                 <Link href="/">
-                  <a className="nav-link" aria-current="page">
+                  <a
+                    className="nav-link"
+                    aria-current="page"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggler"
+                  >
                     HOME
                   </a>
                 </Link>
               </li>
               <li className="nav-item me-2">
                 <Link href="/drinks">
-                  <a className="nav-link">Drinks</a>
+                  <a
+                    className="nav-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggler"
+                  >
+                    Drinks
+                  </a>
                 </Link>
               </li>
               <li className="nav-item me-2">
                 <Link href="/gallery">
-                  <a className="nav-link">GALLERY</a>
+                  <a
+                    className="nav-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggler"
+                  >
+                    GALLERY
+                  </a>
                 </Link>
               </li>
               <li className="nav-item me-2">
                 <Link href="/events">
-                  <a className="nav-link">Events</a>
+                  <a
+                    className="nav-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggler"
+                  >
+                    Events
+                  </a>
                 </Link>
               </li>
               <li className="nav-item me-2">
                 <Link href="/giftvoucher">
-                  <a className="nav-link">Gift Voucher</a>
+                  <a
+                    className="nav-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggler"
+                  >
+                    Gift Voucher
+                  </a>
                 </Link>
               </li>
               <li className="nav-item me-2">
                 <Link href="/contact">
-                  <a className="nav-link">CONTACT</a>
+                  <a
+                    className="nav-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggler"
+                  >
+                    CONTACT
+                  </a>
                 </Link>
               </li>
             </ul>
