@@ -37,26 +37,28 @@ const Nav = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarToggler">
+          <div className="collapsing navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
               <li className="nav-item me-2">
                 <Link href="/">
                   <a
                     className="nav-link"
                     aria-current="page"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggler"
+                    //data-bs-toggle="collapse"
+                    //data-bs-target="#navbarToggler"
                   >
                     HOME
                   </a>
                 </Link>
               </li>
-              <li className="nav-item me-2">
+              <li
+                className="nav-item me-2"
+                //data-bs-toggle="collapse"
+              >
                 <Link href="/drinks">
                   <a
                     className="nav-link"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggler"
+                    //data-bs-target="#navbarToggler"
                   >
                     Drinks
                   </a>
@@ -77,8 +79,8 @@ const Nav = () => {
                 <Link href="/events">
                   <a
                     className="nav-link"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggler"
+                    //data-bs-toggle="collapse"
+                    //data-bs-target="#navbarToggler"
                   >
                     Events
                   </a>
@@ -99,8 +101,8 @@ const Nav = () => {
                 <Link href="/contact">
                   <a
                     className="nav-link"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggler"
+                    //data-bs-toggle="collapse"
+                    //data-bs-target="#navbarToggler"
                   >
                     CONTACT
                   </a>
