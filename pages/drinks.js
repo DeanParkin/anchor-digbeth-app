@@ -5,7 +5,10 @@ import SEO from "../components/SEO";
 const drinks = () => {
   return (
     <>
-      <SEO title="Drinks" />
+      <SEO
+        title="Drinks"
+        description="Real and craft ales, wines, spirits, and cocktails. Traditional Thinking…Modern Drinking…"
+      />
       <Drinks />
     </>
   );
