@@ -5,10 +5,15 @@ import NewsLetter from "../components/NewsLetter";
 import Drinks from "../components/Drinks";
 import Events from "../components/Events";
 import ContactForm from "../components/ContactForm";
+import SEO from "../components/SEO";
 
 export default function Home() {
   return (
     <div>
+      <SEO
+        title="Home"
+        description="The Anchor, Digbeth is a place of comfort to enjoy real ale, ciders, craft beers, wine, spirits and even cocktails, modern drinking in a traditional boozer."
+      />
       <Head>
         <title>The Anchor, Digbeth | Home</title>
       </Head>

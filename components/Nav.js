@@ -3,15 +3,13 @@ import Image from "next/image";
 import SEO from "../components/SEO";
 import Footer from "../components/Footer";
 import logo from "../public/imgs/anchor-nav-logo-small.png";
-import { useRouter } from "next/router"; // TODO - change the logo
-import Router from "next/router";
+import { useRouter } from "next/router";
 import { useEffect } from "react";
-import { useState } from "react";
 
 // TODO - add the navbar links
 // TODO - add the navbar logo
 
-export default function Nav({ children, title }) {
+export default function Nav({ children }) {
   const route = useRouter().route.slice(1);
   const router = useRouter();
 
@@ -19,6 +17,7 @@ export default function Nav({ children, title }) {
     route == ""
       ? { class: "nav-link active", aria: "page", href: "/" }
       : { class: "nav-link", aria: "", href: "/" };
+
   let drinks =
     route == "drinks"
       ? { class: "nav-link active", aria: "page", href: "/" }
@@ -53,13 +52,11 @@ export default function Nav({ children, title }) {
           link.removeAttribute("data-bs-toggle");
           link.removeAttribute("data-bs-target");
         });
-        console.log("removed attributes");
       } else {
         navLinks.forEach((link) => {
           link.setAttribute("data-bs-toggle", "collapse");
           link.setAttribute("data-bs-target", "#navbarToggler");
         });
-        console.log("set attributes");
       }
     }
 
@@ -80,7 +77,6 @@ export default function Nav({ children, title }) {
 
   return (
     <>
-      <SEO />
       <nav className="navbar sticky-top shadow navbar-expand-lg navbar-light bg-primary">
         <div className="container-fluid">
           <div className="me-2" style={{ height: "60px" }}>

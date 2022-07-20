@@ -1,16 +1,27 @@
 import React from "react";
 import Head from "next/dist/shared/lib/head";
 
-const SEO = () => {
+const SEO = ({ title, description }) => {
+  const siteTitle = `The Anchor, Digbeth`;
+  const pageTitle = `${siteTitle} | ${title}`;
   return (
     <>
       <Head>
         {/* //TODO create properties to update the title, description, and Open Graph tags */}
-        <title>The Anchor, Digbeth | </title>
-        <meta
-          name="description"
-          content="The Anchor, Digbeth is a place of comfort to enjoy real ale, ciders, craft beers, wine, spirits and even cocktails, modern drinking in a traditional boozer."
-        />
+        {/* <title>{pageTitle}</title>
+        <meta name="description" content={description} /> */}
+
+        <title>{pageTitle}</title>
+        <meta name="description" content={description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={description} />
+        <meta property="og:site_name" content={siteTitle} />
+        <meta property="twitter:card" content="summary" />
+        <meta property="twitter:creator" content="Dean" />
+        <meta property="twitter:title" content={pageTitle} />
+        <meta property="twitter:description" content={description} />
+
         <link
           rel="apple-touch-icon"
           sizes="180x180"
