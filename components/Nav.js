@@ -5,12 +5,13 @@ import Footer from "../components/Footer";
 import logo from "../public/imgs/anchor-nav-logo-small.png";
 import { useRouter } from "next/router"; // TODO - change the logo
 import Router from "next/router";
-//import { Collapse } from "bootstrap";
-//import * as bootstrap from "bootstrap";
+import { useEffect } from "react";
+import { useState } from "react";
+
 // TODO - add the navbar links
 // TODO - add the navbar logo
 
-export default function Nav(props) {
+export default function Nav({ children, title }) {
   const route = useRouter().route.slice(1);
   const router = useRouter();
 
@@ -39,13 +40,42 @@ export default function Nav(props) {
       ? { class: "nav-link active", aria: "page", href: "/" }
       : { class: "nav-link", aria: "", href: "/" };
 
+  useEffect(() => {
+    let navLinks = document.querySelectorAll(".nav-link");
+    let size = window.innerWidth;
+    document.onload = () => {
+      setAttr();
+    };
+
+    function setAttr() {
+      if (size > 992) {
+        navLinks.forEach((link) => {
+          link.removeAttribute("data-bs-toggle");
+          link.removeAttribute("data-bs-target");
+        });
+        console.log("removed attributes");
+      } else {
+        navLinks.forEach((link) => {
+          link.setAttribute("data-bs-toggle", "collapse");
+          link.setAttribute("data-bs-target", "#navbarToggler");
+        });
+        console.log("set attributes");
+      }
+    }
+
+    const updateWindowDimensions = () => {
+      size = window.innerWidth;
+    };
+    window.addEventListener("resize", () => {
+      updateWindowDimensions();
+      setAttr();
+    });
+    setAttr();
+  }, []);
+
   const handleClick = (e) => {
-    //e.preventDefault();
+    e.preventDefault();
     router.push(e.target.href);
-    // let tog = document.getElementById("navbarToggler");
-    // () => {
-    //   tog.collapse({ toggle: false }).collapse("hide");
-    // };
   };
 
   return (
@@ -82,91 +112,85 @@ export default function Nav(props) {
           <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
               <li className="nav-item me-2">
-                <a
-                  href="/"
-                  className={home.class}
-                  onClick={handleClick}
-                  //aria-current={home.aria}
-                  //aria-current="page"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarToggler"
-                >
-                  HOME
-                </a>
+                <Link href="/">
+                  <a
+                    className={home.class}
+                    onClick={handleClick}
+                    //aria-current={home.aria}
+                    //aria-current="page"
+                  >
+                    HOME
+                  </a>
+                </Link>
               </li>
               <li
                 className="nav-item me-2"
                 //data-bs-toggle="collapse"
               >
-                <a
-                  href="/drinks"
-                  className={drinks.class}
-                  onClick={handleClick}
-                  //aria-current={home.aria}
-                  //aria-current="page"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarToggler"
-                >
-                  Drinks
-                </a>
+                <Link href="/drinks">
+                  <a
+                    className={drinks.class}
+                    onClick={handleClick}
+                    //aria-current={home.aria}
+                    //aria-current="page"
+                  >
+                    Drinks
+                  </a>
+                </Link>
               </li>
               <li className="nav-item me-2">
-                <a
-                  href="/gallery"
-                  className={gallery.class}
-                  onClick={handleClick}
-                  //aria-current={home.aria}
-                  //aria-current="page"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarToggler"
-                >
-                  Gallery
-                </a>
+                <Link href="/gallery">
+                  <a
+                    className={gallery.class}
+                    onClick={handleClick}
+                    //aria-current={home.aria}
+                    //aria-current="page"
+                  >
+                    Gallery
+                  </a>
+                </Link>
               </li>
               <li className="nav-item me-2">
-                <a
-                  href="/events"
-                  className={events.class}
-                  onClick={handleClick}
-                  //aria-current={home.aria}
-                  //aria-current="page"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarToggler"
-                >
-                  Events
-                </a>
+                <Link href="/events">
+                  <a
+                    className={events.class}
+                    onClick={handleClick}
+                    //aria-current={home.aria}
+                    //aria-current="page"
+                  >
+                    Events
+                  </a>
+                </Link>
               </li>
               <li className="nav-item me-2">
-                <a
-                  href="/giftvoucher"
-                  className={giftvoucher.class}
-                  onClick={handleClick}
-                  //aria-current={home.aria}
-                  //aria-current="page"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarToggler"
-                >
-                  gift voucher
-                </a>
+                <Link href="/giftvoucher">
+                  <a
+                    className={giftvoucher.class}
+                    onClick={handleClick}
+                    //aria-current={home.aria}
+                    //aria-current="page"
+                  >
+                    gift voucher
+                  </a>
+                </Link>
               </li>
               <li className="nav-item me-2">
-                <a
-                  href="/contact"
-                  className={contact.class}
-                  onClick={handleClick}
-                  //aria-current={home.aria}
-                  //aria-current="page"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#navbarToggler"
-                >
-                  contact
-                </a>
+                <Link href="/contact">
+                  <a
+                    className={contact.class}
+                    onClick={handleClick}
+                    //aria-current={home.aria}
+                    //aria-current="page"
+                  >
+                    contact
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      {props.children}
+      {children}
       <Footer />
     </>
   );
