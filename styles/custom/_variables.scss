@@ -166,3 +166,68 @@ button.btn.drinks-menu {
 .copyright {
   display: inline-block;
 }
+
+//================================================
+//Loader
+//================================================
+
+.loading-Wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 99999;
+}
+
+.loading-icon {
+  position: absolute;
+  //left: 50%;
+  //top: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 0px auto;
+  -webkit-animation: rotation 2s infinite linear;
+  -webkit-animation: rotation 2s infinite linear;
+  -o-animation: rotation 2s infinite linear;
+  animation: rotation 2s infinite linear;
+  //border: 6px solid rgba(0, 174, 239, 0.15);
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-moz-keyframes rotation {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-o-keyframes rotation {
+  from {
+    -o-transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(359deg);
+  }
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import logo from "../public/imgs/anchor-nav-logo-small.png";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
-
 // TODO - add the navbar links
 // TODO - add the navbar logo
 

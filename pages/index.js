@@ -14,14 +14,16 @@ export default function Home() {
         title="Home"
         description="The Anchor, Digbeth is a place of comfort to enjoy real ale, ciders, craft beers, wine, spirits and even cocktails, modern drinking in a traditional boozer."
       />
-      <Head>
-        <title>The Anchor, Digbeth | Home</title>
-      </Head>
       <Carousel />
       <header className="text-light text-center container pt-3">
-        <h2 className="fs-5">Welcome To</h2>
+        <h2 className="fs-5">
+          Welcome To <br />
+          <span className="h2 text-primary baskerville-font">
+            The Anchor Digbeth
+          </span>
+        </h2>
         <div className="d-flex justify-content-center">
-          <p className="h2 text-primary baskerville-font">The Anchor Digbeth</p>
+          <p className="h2 text-primary baskerville-font"></p>
         </div>
         <div className="d-flex justify-content-center">
           <p className="my-2 text-container">

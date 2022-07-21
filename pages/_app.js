@@ -1,5 +1,9 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import Nav from "../components/Nav";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDharmachakra } from "@fortawesome/free-solid-svg-icons";
+
 import CookieConsent from "react-cookie-consent";
 import "../styles/main.scss";
 
@@ -7,6 +11,56 @@ import "../styles/main.scss";
 //TODO - update cookie consent date
 //TODO - add privacy policy link
 
+function Loading() {
+  const router = useRouter();
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    const handleStart = (url) => url !== router.asPath && setLoading(true);
+
+    const handleComplete = (url) =>
+      url === router.asPath && setTimeout(() => setLoading(false), 100);
+
+    router.events.on("routeChangeStart", handleStart);
+    router.events.on("routeChangeComplete", handleComplete);
+    router.events.on("routeChangeError", handleComplete);
+    return () => {
+      router.events.off("routeChangeStart", handleStart);
+      router.events.off("routeChangeComplete", handleComplete);
+      router.events.off("routeChangeError", handleComplete);
+    };
+  });
+
+  return (
+    loading && (
+      <div className="loading-Wrapper">
+        <div className="loading-icon">
+          <FontAwesomeIcon icon={faDharmachakra} />
+        </div>
+      </div>
+    )
+  );
+}
+
+function SiteLoader() {
+  const [siteLoad, setSiteLoad] = useState(true);
+
+  useEffect(() => {
+    window.addEventListener("load", (e) => {
+      setTimeout(() => setSiteLoad(true), 700);
+    });
+  }, []);
+
+  return (
+    siteLoad && (
+      <div className="loading-Wrapper">
+        <div className="loading-icon">
+          <FontAwesomeIcon icon={faDharmachakra} className="text-primary" />
+        </div>
+      </div>
+    )
+  );
+}
 function MyApp({ Component, pageProps }) {
   // importing Bootstrap js
   useEffect(() => {
@@ -15,6 +69,8 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      {/* <Loading /> */}
+      <SiteLoader />
       <Nav>
         <Component {...pageProps} />
       </Nav>
