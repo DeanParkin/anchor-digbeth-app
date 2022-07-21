@@ -231,3 +231,56 @@ button.btn.drinks-menu {
     transform: rotate(359deg);
   }
 }
+
+//================================================
+//Hamburger Icon Animation
+//================================================
+
+@mixin transform($value) {
+  -webkit-transform: $value;
+  -moz-transform: $value;
+  -ms-transform: $value;
+  -o-transform: $value;
+  transform: $value;
+}
+
+@mixin animate($attr, $time) {
+  -webkit-transition: $attr $time ease;
+  -moz-transition: $attr $time ease;
+  -ms-transition: $attr $time ease;
+  -o-transition: $attr $time ease;
+  transition: $attr $time ease;
+}
+
+.nav-icon {
+  margin: 1em;
+  width: 2em;
+}
+
+.nav-icon div,
+.nav-icon:after,
+.nav-icon:before {
+  background-color: #000;
+  border-radius: 3px;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  @include animate(all, 400ms);
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.x.nav-icon:before {
+  @include transform(translateY(12px) rotate(135deg));
+}
+
+.x.nav-icon:after {
+  @include transform(translateY(-12px) rotate(-135deg));
+}
+
+.x.nav-icon div {
+  @include transform(scale(0));
+}

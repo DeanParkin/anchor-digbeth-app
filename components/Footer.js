@@ -7,15 +7,24 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { faShareNodes } from "@fortawesome/free-solid-svg-icons";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const Footer = () => {
+  const router = useRouter();
+  const url = `${router.asPath}`;
+  const title = `${router.query.title}`;
+  const description = `${router.query.description}`;
+  const image = `${router.query.image}`;
+
   const shareData = async () => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: "The Anchor Digbeth",
-          text: "Traditional Thinking...Modern Drinking...",
-          url: "https://theanchordigbeth.com",
+          title: `${title}`,
+          text: `${description}`,
+          url: `${url}`,
         });
       } catch (error) {
         console.log(error);

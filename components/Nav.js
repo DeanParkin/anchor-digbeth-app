@@ -1,16 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
-import SEO from "../components/SEO";
 import Footer from "../components/Footer";
 import logo from "../public/imgs/anchor-nav-logo-small.png";
 import { useRouter } from "next/router";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 // TODO - add the navbar links
 // TODO - add the navbar logo
 
 export default function Nav({ children }) {
   const route = useRouter().route.slice(1);
   const router = useRouter();
+
+  const [navOpen, setNavOpen] = useState(false);
 
   let home =
     route == ""
@@ -66,12 +67,28 @@ export default function Nav({ children }) {
       updateWindowDimensions();
       setAttr();
     });
+
     setAttr();
   }, []);
 
-  const handleClick = (e) => {
+  const toggleClick = () => {
+    console.log("navOpen ", navOpen);
+    setNavOpen(navOpen ? false : true);
+
+    if (navOpen == true) {
+      document.querySelector(".nav-icon").classList.remove("x");
+      console.log("this happened");
+    } else {
+      document.querySelector(".nav-icon").classList.add("x");
+      console.log("that happened");
+    }
+  };
+
+  const linkClick = (e) => {
     e.preventDefault();
     router.push(e.target.href);
+    document.querySelector(".nav-icon").classList.remove("x");
+    setNavOpen(false);
   };
 
   return (
@@ -96,6 +113,7 @@ export default function Nav({ children }) {
             </Link>
           </div>
           <button
+            id="toggleBtn"
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -103,8 +121,11 @@ export default function Nav({ children }) {
             aria-controls="navbarToggler"
             aria-expanded="false"
             aria-label="Toggle navigation"
+            onClick={toggleClick}
           >
-            <span className="navbar-toggler-icon"></span>
+            <div className="nav-icon">
+              <div></div>
+            </div>
           </button>
           <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
@@ -112,7 +133,7 @@ export default function Nav({ children }) {
                 <Link href="/">
                   <a
                     className={home.class}
-                    onClick={handleClick}
+                    onClick={linkClick}
                     //aria-current={home.aria}
                     //aria-current="page"
                   >
@@ -127,7 +148,7 @@ export default function Nav({ children }) {
                 <Link href="/drinks">
                   <a
                     className={drinks.class}
-                    onClick={handleClick}
+                    onClick={linkClick}
                     //aria-current={home.aria}
                     //aria-current="page"
                   >
@@ -139,7 +160,7 @@ export default function Nav({ children }) {
                 <Link href="/gallery">
                   <a
                     className={gallery.class}
-                    onClick={handleClick}
+                    onClick={linkClick}
                     //aria-current={home.aria}
                     //aria-current="page"
                   >
@@ -151,7 +172,7 @@ export default function Nav({ children }) {
                 <Link href="/events">
                   <a
                     className={events.class}
-                    onClick={handleClick}
+                    onClick={linkClick}
                     //aria-current={home.aria}
                     //aria-current="page"
                   >
@@ -163,7 +184,7 @@ export default function Nav({ children }) {
                 <Link href="/giftvoucher">
                   <a
                     className={giftvoucher.class}
-                    onClick={handleClick}
+                    onClick={linkClick}
                     //aria-current={home.aria}
                     //aria-current="page"
                   >
@@ -175,7 +196,7 @@ export default function Nav({ children }) {
                 <Link href="/contact">
                   <a
                     className={contact.class}
-                    onClick={handleClick}
+                    onClick={linkClick}
                     //aria-current={home.aria}
                     //aria-current="page"
                   >
