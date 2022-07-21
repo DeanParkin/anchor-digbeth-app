@@ -47,7 +47,7 @@ function SiteLoader() {
 
   useEffect(() => {
     window.addEventListener("load", (e) => {
-      setTimeout(() => setSiteLoad(true), 700);
+      setTimeout(() => setSiteLoad(false), 700);
     });
   }, []);
 
