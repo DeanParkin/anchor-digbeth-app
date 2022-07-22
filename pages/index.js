@@ -1,7 +1,4 @@
-import Head from "next/head";
-import Image from "next/image";
 import Carousel from "../components/Carousel";
-import NewsLetter from "../components/NewsLetter";
 import Drinks from "../components/Drinks";
 import Events from "../components/Events";
 import ContactForm from "../components/ContactForm";

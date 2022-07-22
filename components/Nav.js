@@ -72,15 +72,14 @@ export default function Nav({ children }) {
   }, []);
 
   const toggleClick = () => {
-    console.log("navOpen ", navOpen);
+    //Set new Nav State
     setNavOpen(navOpen ? false : true);
 
+    //Add and remove cross class
     if (navOpen == true) {
       document.querySelector(".nav-icon").classList.remove("x");
-      console.log("this happened");
     } else {
       document.querySelector(".nav-icon").classList.add("x");
-      console.log("that happened");
     }
   };
 

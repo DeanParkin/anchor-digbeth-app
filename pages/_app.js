@@ -4,7 +4,7 @@ import Nav from "../components/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDharmachakra } from "@fortawesome/free-solid-svg-icons";
 
-import CookieConsent from "react-cookie-consent";
+//import CookieConsent from "react-cookie-consent";
 import "../styles/main.scss";
 
 //TODO - Remove Debugging from cookie consent for production
@@ -74,7 +74,7 @@ function MyApp({ Component, pageProps }) {
       <Nav>
         <Component {...pageProps} />
       </Nav>
-      <CookieConsent
+      {/* <CookieConsent
         disableStyles={true}
         debug={false}
         // flipButtons={true}
@@ -88,7 +88,7 @@ function MyApp({ Component, pageProps }) {
         expires={1}
       >
         This site uses Cookies for performance improvements.
-      </CookieConsent>
+      </CookieConsent> */}
     </>
   );
 }
