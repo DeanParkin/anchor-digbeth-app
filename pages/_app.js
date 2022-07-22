@@ -63,6 +63,8 @@ function SiteLoader() {
     )
   );
 }
+
+//Main App Component
 function MyApp({ Component, pageProps }) {
   // importing Bootstrap js
   useEffect(() => {

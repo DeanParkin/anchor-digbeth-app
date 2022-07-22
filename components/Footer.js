@@ -18,7 +18,7 @@ const Footer = () => {
       try {
         await navigator.share({
           title: `The Anchor, Digbeth`,
-          text: `Traditional Thinking...Modern Drinking...`,
+          text: `The Anchor, Digbeth`,
           url: `${url}`,
         });
       } catch (error) {
