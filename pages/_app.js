@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+//import { useRouter } from "next/router";
 import Nav from "../components/Nav";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDharmachakra } from "@fortawesome/free-solid-svg-icons";
@@ -11,37 +11,39 @@ import "../styles/main.scss";
 //TODO - update cookie consent date
 //TODO - add privacy policy link
 
-function Loading() {
-  const router = useRouter();
-  const [loading, setLoading] = useState(false);
+// //Loader Component for loading a page
+// function PageLoading() {
+//   const router = useRouter();
+//   const [loading, setLoading] = useState(false);
 
-  useEffect(() => {
-    const handleStart = (url) => url !== router.asPath && setLoading(true);
+//   useEffect(() => {
+//     const handleStart = (url) => url !== router.asPath && setLoading(true);
 
-    const handleComplete = (url) =>
-      url === router.asPath && setTimeout(() => setLoading(false), 100);
+//     const handleComplete = (url) =>
+//       url === router.asPath && setTimeout(() => setLoading(false), 100);
 
-    router.events.on("routeChangeStart", handleStart);
-    router.events.on("routeChangeComplete", handleComplete);
-    router.events.on("routeChangeError", handleComplete);
-    return () => {
-      router.events.off("routeChangeStart", handleStart);
-      router.events.off("routeChangeComplete", handleComplete);
-      router.events.off("routeChangeError", handleComplete);
-    };
-  });
+//     router.events.on("routeChangeStart", handleStart);
+//     router.events.on("routeChangeComplete", handleComplete);
+//     router.events.on("routeChangeError", handleComplete);
+//     return () => {
+//       router.events.off("routeChangeStart", handleStart);
+//       router.events.off("routeChangeComplete", handleComplete);
+//       router.events.off("routeChangeError", handleComplete);
+//     };
+//   });
 
-  return (
-    loading && (
-      <div className="loading-Wrapper">
-        <div className="loading-icon">
-          <FontAwesomeIcon icon={faDharmachakra} />
-        </div>
-      </div>
-    )
-  );
-}
+//   return (
+//     loading && (
+//       <div className="loading-Wrapper">
+//         <div className="loading-icon">
+//           <FontAwesomeIcon icon={faDharmachakra} />
+//         </div>
+//       </div>
+//     )
+//   );
+// }
 
+//Loader Component for loading the site
 function SiteLoader() {
   const [siteLoad, setSiteLoad] = useState(true);
 
@@ -69,7 +71,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
-      {/* <Loading /> */}
+      {/* <PageLoading /> */}
       <SiteLoader />
       <Nav>
         <Component {...pageProps} />
