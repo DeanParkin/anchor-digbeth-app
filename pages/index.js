@@ -29,7 +29,7 @@ export default function Home() {
             present you with the best and more interesting products available.
             We don&apos;t intend to re-invent the wheel, our aim is simply to
             provide a friendly space for everyone to enjoy great beer, wine,
-            coffee, Cocktails and spirits with great service. Simple.
+            coffee, cocktails and spirits with great service. Simple.
           </p>
         </div>
       </header>
