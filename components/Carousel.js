@@ -70,10 +70,10 @@ const Carousel = () => {
               className="d-block"
               priority={true}
               placeholder="blur"
-              width={1350}
-              height={600}
-
-              // objectFit="cover"
+              // width={1350}
+              // height={600}
+              objectFit="fill"
+              //objectFit="cover"
             />
           </div>
           <div className="carousel-item">
@@ -83,8 +83,8 @@ const Carousel = () => {
               className="d-block w-100"
               priority={true}
               //placeholder="blur"
-              width={1350}
-              height={600}
+              objectFit="fill"
+              //objectFit="cover"
 
               // objectFit="cover"
             />
@@ -97,8 +97,8 @@ const Carousel = () => {
               className="d-block w-100"
               priority={true}
               //placeholder="blur"
-              width={1350}
-              height={600}
+              objectFit="fill"
+              //objectFit="cover"
               // objectFit="cover"
             />
             {/*<img src="..." className="d-block w-100" alt="...">*/}
