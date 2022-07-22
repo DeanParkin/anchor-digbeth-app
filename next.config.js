@@ -3,9 +3,4 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-module.exports = {
-  nextConfig,
-  images: {
-    formats: ["image/webp"],
-  },
-};
+module.exports = nextConfig;

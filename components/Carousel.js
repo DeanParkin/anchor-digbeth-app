@@ -67,13 +67,14 @@ const Carousel = () => {
             <Image
               src={image1}
               alt="The Anchor has a wide range of beer"
-              className="d-block"
+              className="d-block w-100"
               priority={true}
               placeholder="blur"
               // width={1350}
               // height={600}
               //objectFit="fill"
-              objectFit="cover"
+              //objectFit="cover"
+              layout="responsive"
             />
           </div>
           <div className="carousel-item">
@@ -84,8 +85,8 @@ const Carousel = () => {
               priority={true}
               //placeholder="blur"
               //objectFit="fill"
-              objectFit="cover"
-
+              //objectFit="cover"
+              layout="responsive"
               // objectFit="cover"
             />
             {/*<img src="..." className="d-block w-100" alt="...">*/}
@@ -98,7 +99,9 @@ const Carousel = () => {
               priority={true}
               //placeholder="blur"
               //objectFit="fill"
-              objectFit="cover"
+
+              layout="responsive"
+              //objectFit="cover"
             />
             {/*<img src="..." className="d-block w-100" alt="...">*/}
           </div>
