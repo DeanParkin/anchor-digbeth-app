@@ -1,12 +1,12 @@
 import React from "react";
 import Image from "next/image";
 
-import event1 from "../public/imgs/events/FREE POOL_WEB.jpg";
-import event2 from "../public/imgs/events/2for1 COCKTAILS_WEB.jpg";
-import event3 from "../public/imgs/events/QUIZ_WEB.jpg";
-import event4 from "../public/imgs/events/FIZZ FRIDAY_WEB.jpg";
-import event5 from "../public/imgs/events/LIVE MUSIC_WEB.jpg";
-import event6 from "../public/imgs/events/TRADE_WEB.jpg";
+import event1 from "../public/imgs/Events/FREE_POOL_WEB.jpg";
+import event2 from "../public/imgs/Events/2for1_COCKTAILS_WEB.jpg";
+import event3 from "../public/imgs/Events/QUIZ_WEB.jpg";
+import event4 from "../public/imgs/Events/FIZZ_FRIDAY_WEB.jpg";
+import event5 from "../public/imgs/Events/LIVE_MUSIC_WEB.jpg";
+import event6 from "../public/imgs/Events/TRADE_WEB.jpg";
 
 const Events = () => {
   return (
