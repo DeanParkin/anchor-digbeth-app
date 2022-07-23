@@ -24,11 +24,9 @@ export default function Home({ feed }) {
       />
       <Carousel />
       <header className="text-light text-center container pt-3">
-        <h2 className="fs-5">
+        <h2 className="fs-5 baskerville-font">
           Welcome To <br />
-          <span className="h2 text-primary baskerville-font">
-            The Anchor Digbeth
-          </span>
+          <span className="h2 text-primary">The Anchor Digbeth</span>
         </h2>
         <div className="d-flex justify-content-center">
           <p className="h2 text-primary baskerville-font"></p>

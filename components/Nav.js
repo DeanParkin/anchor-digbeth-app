@@ -92,7 +92,7 @@ export default function Nav({ children }) {
 
   return (
     <>
-      <nav className="navbar sticky-top shadow navbar-expand-lg navbar-light bg-primary">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
         <div className="container-fluid">
           <div className="me-2" style={{ height: "60px" }}>
             <h1 className="m-0">

@@ -12,22 +12,29 @@
 }
 
 .oswald-font {
-  font-family: "Oswald", sans-serif;
+  font-family: "Proxima Bold", sans-serif;
 }
 
 //Bootstrap Font Overrides
-$font-family-sans-serif: "Quicksand", "Noto Sans", "Liberation Sans", sans-serif,
+$font-family-sans-serif: "Proxima", "Noto Sans", "Liberation Sans", sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace;
 
 $font-size-root: 20px;
 
+.btn {
+  font-family: "Proxima Bold", sans-serif;
+  text-transform: uppercase;
+}
+
 //================================================
 //Colors
 //#b3d6d2;
 //#b8e6d8;
 //#71c3b4;
+//#a9dbd1
+//
 //================================================
 
 // scss-docs-start theme-color-variables
@@ -74,9 +81,9 @@ div div.input-group input.newsletter-submit.btn {
 }
 
 .navbar-nav > li > a.nav-link {
-  font-family: "Oswald", sans-serif;
+  font-family: "Proxima Bold", sans-serif;
   font-size: 25px;
-  letter-spacing: 0.1em;
+  //letter-spacing: 0.1em;
   font-weight: 700;
   &:hover {
     color: #000;
@@ -120,7 +127,7 @@ div div.input-group input.newsletter-submit.btn {
 
 .opening-hours {
   //text-transform: uppercase;
-  font-family: "Oswald", sans-serif;
+  font-family: "Proxima", sans-serif;
   display: table;
   // font-size: 16px;
   white-space: nowrap;
@@ -138,7 +145,7 @@ div div.input-group input.newsletter-submit.btn {
 $alert-padding-y: 0.5rem;
 
 // Drinks Menu Css
-button.btn.drinks-menu {
+button.btn {
   background-color: $primary;
   color: #000;
   border-color: $primary;
