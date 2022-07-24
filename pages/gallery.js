@@ -56,7 +56,9 @@ export default function Gallery({ feed }) {
         <button className="btn btn-primary me-2" onClick={loadClick}>
           Load more
         </button>
-        <button className="btn btn-primary">go to instagram</button>
+        <a href="https://www.instagram.com/theanchordigbeth1797/">
+          <button className="btn btn-primary">go to instagram</button>
+        </a>
       </div>
     </>
   );
