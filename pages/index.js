@@ -64,6 +64,7 @@ export default function Home({ feed }) {
                         //height={400}
                         //width={400}
                         layout="fill"
+                        placeholder="blur"
                         //loader={imageLoader}
                         src={image.media_url}
                         alt={image.caption}
