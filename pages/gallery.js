@@ -1,6 +1,7 @@
 import React from "react";
 import SEO from "../components/SEO";
 import { useState } from "react";
+import Image from "next/image";
 //import Gallery from "../components/Gallery";
 
 export default function Gallery({ feed }) {
@@ -36,9 +37,11 @@ export default function Gallery({ feed }) {
                   href={image.permalink}
                   className="card mb-2 border-primary ratio ratio-1x1"
                 >
-                  <img
+                  <Image
                     //height={400}
                     //width={400}
+                    layout="fill"
+                    //loader={imageLoader}
                     src={image.media_url}
                     alt={image.caption}
                     className="card-image"
