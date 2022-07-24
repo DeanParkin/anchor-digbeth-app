@@ -25,7 +25,7 @@ const Events = () => {
                 src={event1}
                 alt="The Anchor has a wide range of beer"
                 className="d-block w-100"
-                priority={true}
+                //priority={true}
                 placeholder="blur"
                 // width={1350}
                 // height={600}
@@ -41,7 +41,7 @@ const Events = () => {
                 src={event2}
                 alt="The Anchor has a wide range of beer"
                 className="d-block w-100"
-                priority={true}
+                //priority={true}
                 placeholder="blur"
                 // width={1350}
                 // height={600}
@@ -57,7 +57,7 @@ const Events = () => {
                 src={event3}
                 alt="The Anchor has a wide range of beer"
                 className="d-block w-100"
-                priority={true}
+                //priority={true}
                 placeholder="blur"
                 // width={1350}
                 // height={600}
@@ -73,7 +73,7 @@ const Events = () => {
                 src={event4}
                 alt="The Anchor has a wide range of beer"
                 className="d-block w-100"
-                priority={true}
+                //priority={true}
                 placeholder="blur"
                 // width={1350}
                 // height={600}
@@ -89,7 +89,7 @@ const Events = () => {
                 src={event5}
                 alt="The Anchor has a wide range of beer"
                 className="d-block w-100"
-                priority={true}
+                //priority={true}
                 placeholder="blur"
                 // width={1350}
                 // height={600}
@@ -105,7 +105,7 @@ const Events = () => {
                 src={event6}
                 alt="The Anchor has a wide range of beer"
                 className="d-block w-100"
-                priority={true}
+                //priority={true}
                 placeholder="blur"
                 // width={1350}
                 // height={600}
