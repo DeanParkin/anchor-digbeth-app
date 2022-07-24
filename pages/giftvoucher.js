@@ -10,6 +10,7 @@ const giftvoucher = () => {
       />
       <div className="container text-center pt-3">
         <h2 className="h2 text-primary baskerville-font">Gift Voucher</h2>
+        <p>We offer Gift Vouchers</p>
       </div>
     </>
   );
