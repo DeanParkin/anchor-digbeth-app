@@ -29,7 +29,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="sticky-bottom mt-3">
+      <footer className="mt-3">
         <NewsLetter />
         <div className="container footer-container text-light">
           <div className="row my-4 fs-5">

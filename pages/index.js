@@ -60,10 +60,10 @@ export default function Home({ feed }) {
                       href={image.permalink}
                       className="card mb-2 border-primary ratio ratio-1x1"
                     >
-                      <Image
+                      <img
                         //height={400}
                         //width={400}
-                        layout="fill"
+                        //layout="fill"
                         //placeholder="blur"
                         //loader={imageLoader}
                         src={image.media_url}

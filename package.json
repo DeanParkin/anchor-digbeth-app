@@ -23,7 +23,6 @@
     "react-cookie-consent": "^7.5.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.33.1",
-    "react-loader-spinner": "^5.1.5",
     "sass": "^1.53.0"
   },
   "devDependencies": {
