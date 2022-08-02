@@ -10,6 +10,7 @@
 //5. Footer
 //6. Loader
 //7. Hamburger Icon Animation
+//8. Card Image
 
 //================================================
 //Globals
@@ -262,4 +263,14 @@ div div.input-group input.newsletter-submit.btn {
 
 .x.nav-icon div {
   @include transform(scale(0));
+}
+
+//================================================
+//Card Image
+//================================================
+
+//fixes the displaying aspect ratio of the image
+.card-img {
+  width: 100%;
+  object-fit: cover;
 }
