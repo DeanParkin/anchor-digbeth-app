@@ -104,5 +104,6 @@ export const getStaticProps = async () => {
     props: {
       feed,
     },
+    revalidate: 3600,
   };
 };

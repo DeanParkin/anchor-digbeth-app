@@ -179,8 +179,7 @@ const Footer = () => {
             </div>
             <div className="d-flex justify-content-center">
               <p className="text-center text-light pb-4">
-                Website developed by{" "}
-                <a href="https://www.700webdesign.co.uk">700 Web Design</a>.
+                Website developed by <a href="#">Plan;D</a>.
               </p>
             </div>
           </div>
