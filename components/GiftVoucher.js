@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
-let messageSent = false;
+let giftVoucherSent = false;
 
 export default function GiftVoucher() {
   const {
@@ -11,7 +11,7 @@ export default function GiftVoucher() {
     reset,
   } = useForm();
 
-  async function onSubmitForm(data) {
+  async function onSubmitGift(data) {
     let config = {
       method: "POST",
       url: `${
@@ -25,7 +25,7 @@ export default function GiftVoucher() {
       const response = await axios(config);
       if (response.status === 200) {
         console.log("Message was sent Successfully");
-        messageSent = true;
+        giftVoucherSent = true;
         reset();
       }
     } catch (err) {
@@ -51,7 +51,7 @@ export default function GiftVoucher() {
         <div className="d-flex justify-content-center">
           <form
             className="text-primary mb-3 contact-form"
-            onSubmit={handleSubmit(onSubmitForm)}
+            onSubmit={handleSubmit(onSubmitGift)}
           >
             <div className="form-group">
               <label htmlFor="name">Name</label>
@@ -163,7 +163,7 @@ export default function GiftVoucher() {
             </div>
           </form>
         </div>
-        {messageSent && (
+        {giftVoucherSent && (
           <div className="alert alert-success mt-2">
             <p className="text-center">Message sent successfully</p>
           </div>
