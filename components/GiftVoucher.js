@@ -58,16 +58,16 @@ export default function GiftVoucher() {
               <input
                 type="text"
                 className={`form-control ${
-                  errors.contactName ? "border-danger" : ""
+                  errors.giftContactName ? "border-danger" : ""
                 }`}
                 id="name"
                 placeholder="Enter name"
-                {...register("contactName", {
+                {...register("giftContactName", {
                   required: { value: true, message: "Your Name is required" },
                 })}
               />
               <span className="text-danger py-2">
-                {errors?.contactName?.message}
+                {errors?.giftContactName?.message}
               </span>
             </div>
             <div className="form-group">
@@ -75,11 +75,11 @@ export default function GiftVoucher() {
               <input
                 type="tel"
                 className={`form-control ${
-                  errors.contactPhoneNumber ? "border-danger" : ""
+                  errors.giftContactPhoneNumber ? "border-danger" : ""
                 }`}
                 id="phoneNumber"
                 placeholder="Enter Phone Number"
-                {...register("contactPhoneNumber", {
+                {...register("giftContactPhoneNumber", {
                   required: {
                     value: true,
                     message: "Your Phone Number is required",
@@ -93,7 +93,7 @@ export default function GiftVoucher() {
                 })}
               />
               <span className="text-danger py-2">
-                {errors?.contactPhoneNumber?.message}
+                {errors?.giftContactPhoneNumber?.message}
               </span>
             </div>
             <div className="form-group">
@@ -101,11 +101,11 @@ export default function GiftVoucher() {
               <input
                 type="text"
                 className={`form-control ${
-                  errors.contactEmail ? "border-danger" : ""
+                  errors.giftContactEmail ? "border-danger" : ""
                 }`}
                 id="email"
                 placeholder="Enter email"
-                {...register("contactEmail", {
+                {...register("giftContactEmail", {
                   required: { value: true, message: "Your Email is required" },
                   pattern: {
                     value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
@@ -114,7 +114,7 @@ export default function GiftVoucher() {
                 })}
               />
               <span className="text-danger py-2">
-                {errors?.contactEmail?.message}
+                {errors?.giftContactEmail?.message}
               </span>
             </div>
             <div className="form-group">
@@ -122,11 +122,19 @@ export default function GiftVoucher() {
                 Amount
               </label>
               <div className="input-group">
-                <div className="input-group-text">£</div>
+                <div
+                  className={`input-group-text ${
+                    errors.amount ? "border-danger" : ""
+                  }`}
+                >
+                  £
+                </div>
                 <input
                   type="number"
                   id="exampleInputAmount"
-                  className="form-control"
+                  className={`form-control ${
+                    errors.amount ? "border-danger" : ""
+                  }`}
                   placeholder="Price"
                   {...register("amount", {
                     required: {
@@ -145,15 +153,15 @@ export default function GiftVoucher() {
               <label htmlFor="message">Message (optional)</label>
               <textarea
                 className={`form-control ${
-                  errors.contactMessage ? "border-danger" : ""
+                  errors.giftContactMessage ? "border-danger" : ""
                 }`}
                 id="message"
                 rows="3"
                 placeholder="Let us know how we can help"
-                {...register("contactMessage", {})}
+                {...register("giftContactMessage", {})}
               ></textarea>
               <span className="text-danger py-2">
-                {errors?.contactMessage?.message}
+                {errors?.giftContactMessage?.message}
               </span>
             </div>
             <div className="justify-content-end d-flex d-grid">

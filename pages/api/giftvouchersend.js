@@ -3,11 +3,11 @@ import nodemailer from "nodemailer";
 
 export default async function handler(req, res) {
   const {
-    contactName,
-    contactEmail,
-    contactMessage,
+    giftContactName,
+    giftContactEmail,
+    giftContactMessage,
     amount,
-    contactPhoneNumber,
+    giftContactPhoneNumber,
   } = req.body;
 
   const transporter = nodemailer.createTransport({
@@ -22,15 +22,15 @@ export default async function handler(req, res) {
 
   try {
     const emailRes = await transporter.sendMail({
-      from: `${contactName} <${contactEmail}>`,
+      from: `${giftContactName} <${giftContactEmail}>`,
       to: "deanparkim1987@gmail.com",
-      subject: `Contact Form Submission from ${contactName}`,
+      subject: `Contact Form Submission from ${giftContactName}`,
       html: `<p>You have a new contact form submission</p><br>
-      <p><strong>Name: </strong> ${contactName}</p><br>
-      <p><strong>Email: </strong> ${contactEmail}</p><br>
-      <p><strong>Phone Number: </strong> ${contactPhoneNumber}</p><br>
+      <p><strong>Name: </strong> ${giftContactName}</p><br>
+      <p><strong>Email: </strong> ${giftContactEmail}</p><br>
+      <p><strong>Phone Number: </strong> ${giftContactPhoneNumber}</p><br>
       <p><strong>Amount: </strong> ${amount}</p><br>
-      <p><strong>Message: </strong> ${contactMessage}</p>`,
+      <p><strong>Message: </strong> ${giftContactMessage}</p>`,
     });
     console.log("Message sent: %s", emailRes.messageId);
   } catch (error) {
