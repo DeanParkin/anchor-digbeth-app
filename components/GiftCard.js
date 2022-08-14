@@ -3,7 +3,7 @@ import axios from "axios";
 
 let giftVoucherSent = false;
 
-export default function GiftVoucher() {
+export default function GiftCard() {
   const {
     register,
     handleSubmit,
