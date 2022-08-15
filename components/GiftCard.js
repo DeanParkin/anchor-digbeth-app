@@ -54,13 +54,13 @@ export default function GiftCard() {
             onSubmit={handleSubmit(onSubmitGift)}
           >
             <div className="form-group">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="gift-name">Name</label>
               <input
                 type="text"
                 className={`form-control ${
                   errors.giftContactName ? "border-danger" : ""
                 }`}
-                id="name"
+                id="gift-name"
                 placeholder="Enter name"
                 {...register("giftContactName", {
                   required: { value: true, message: "Your Name is required" },
@@ -97,13 +97,13 @@ export default function GiftCard() {
               </span>
             </div>
             <div className="form-group">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="gift-email">Email</label>
               <input
                 type="text"
                 className={`form-control ${
                   errors.giftContactEmail ? "border-danger" : ""
                 }`}
-                id="email"
+                id="gift-email"
                 placeholder="Enter email"
                 {...register("giftContactEmail", {
                   required: { value: true, message: "Your Email is required" },
@@ -150,12 +150,12 @@ export default function GiftCard() {
               </span>
             </div>
             <div className="form-group">
-              <label htmlFor="message">Message (optional)</label>
+              <label htmlFor="gift-message">Message (optional)</label>
               <textarea
                 className={`form-control ${
                   errors.giftContactMessage ? "border-danger" : ""
                 }`}
-                id="message"
+                id="gift-message"
                 rows="3"
                 placeholder="Let us know how we can help"
                 {...register("giftContactMessage", {})}
