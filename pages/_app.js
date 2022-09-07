@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 //import { useRouter } from "next/router";
 import Nav from "../components/Nav";
+import Script from "next/script";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDharmachakra } from "@fortawesome/free-solid-svg-icons";
 
@@ -73,6 +74,21 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+
+      <Script id="gtagScript" strategy="lazyOnload">
+        {`
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                    page_path: window.location.pathname,
+                    });
+                `}
+      </Script>
       {/* <PageLoading /> */}
       <SiteLoader />
       <Nav>
