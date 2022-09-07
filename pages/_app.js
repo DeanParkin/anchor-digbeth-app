@@ -49,7 +49,7 @@ function SiteLoader() {
 
   useEffect(() => {
     window.addEventListener("load", (e) => {
-      setTimeout(() => setSiteLoad(false), 700);
+      setTimeout(() => setSiteLoad(false), 1);
     });
   }, []);
 
