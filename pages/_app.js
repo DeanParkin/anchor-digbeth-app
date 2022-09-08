@@ -8,6 +8,8 @@ import { faDharmachakra } from "@fortawesome/free-solid-svg-icons";
 import CookieConsent from "react-cookie-consent";
 import "../styles/main.scss";
 
+import TagManager from "react-gtm-module";
+
 //TODO - Remove Debugging from cookie consent for production
 //TODO - update cookie consent date
 //TODO - add privacy policy link
@@ -52,6 +54,12 @@ function SiteLoader() {
     window.addEventListener("load", (e) => {
       setTimeout(() => setSiteLoad(false), 1);
     });
+
+    const tagManagerArgs = {
+      gtmId: "GTM-MFZDV85",
+    };
+
+    TagManager.initialize(tagManagerArgs);
   }, []);
 
   return (
