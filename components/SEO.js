@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/dist/shared/lib/head";
+import Script from "next/script";
 
 const SEO = ({ title, description }) => {
   const siteTitle = `The Anchor, Digbeth`;
@@ -10,7 +11,6 @@ const SEO = ({ title, description }) => {
         {/* //TODO create properties to update the title, description, and Open Graph tags */}
         {/* <title>{pageTitle}</title>
         <meta name="description" content={description} /> */}
-
         <title>{pageTitle}</title>
         <meta name="description" content={description} />
         <meta property="og:type" content="website" />
