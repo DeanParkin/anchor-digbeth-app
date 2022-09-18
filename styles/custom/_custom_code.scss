@@ -34,9 +34,16 @@ button.btn {
   background-color: $primary;
   color: #000;
   border-color: $primary;
-  &:hover {
+  --bs-btn-hover-border-color: $primary;
+  // &:hover {
+  //   background-color: #000;
+  //   color: $primary;
+  // }
+  :not(.btn-check) + &:hover,
+  &:first-child:hover {
     background-color: #000;
     color: $primary;
+    border-color: $primary;
   }
 }
 

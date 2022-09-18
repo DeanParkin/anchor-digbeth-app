@@ -53,11 +53,11 @@ export default function Gallery({ feed }) {
         </div>
       </div>
       <div className="d-flex justify-content-center mt-2 mb-4">
-        <button className="btn btn-primary me-2" onClick={loadClick}>
+        <button className="btn me-2" onClick={loadClick}>
           Load more
         </button>
         <a href="https://www.instagram.com/theanchordigbeth1797/">
-          <button className="btn btn-primary">go to instagram</button>
+          <button className="btn">go to instagram</button>
         </a>
       </div>
     </>

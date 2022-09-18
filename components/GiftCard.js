@@ -165,7 +165,7 @@ export default function GiftCard() {
               </span>
             </div>
             <div className="justify-content-end d-flex d-grid">
-              <button type="submit" className="btn btn-primary mt-2">
+              <button type="submit" className="btn mt-2">
                 Submit
               </button>
             </div>
