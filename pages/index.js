@@ -69,6 +69,7 @@ export default function Home({ feed }) {
                         src={image.media_url}
                         alt={image.caption}
                         className="card-img"
+                        loading="lazy"
                       />
                     </a>
                   </div>

@@ -24,8 +24,8 @@ export default async function handler(req, res) {
     const emailRes = await transporter.sendMail({
       from: `${giftContactName} <${giftContactEmail}>`,
       to: "deanparkim1987@gmail.com",
-      subject: `Contact Form Submission from ${giftContactName}`,
-      html: `<p>You have a new contact form submission</p><br>
+      subject: `Gift Voucher Form Submission from ${giftContactName}`,
+      html: `<p>You have a new Gift Voucher form submission</p><br>
       <p><strong>Name: </strong> ${giftContactName}</p><br>
       <p><strong>Email: </strong> ${giftContactEmail}</p><br>
       <p><strong>Phone Number: </strong> ${giftContactPhoneNumber}</p><br>
