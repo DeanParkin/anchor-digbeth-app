@@ -23,7 +23,7 @@ export default async function handler(req, res) {
   try {
     const emailRes = await transporter.sendMail({
       from: `${giftContactName} <${giftContactEmail}>`,
-      to: "deanparkim1987@gmail.com",
+      to: "julian@theanchordigbeth.com",
       subject: `Gift Voucher Form Submission from ${giftContactName}`,
       html: `<p>You have a new Gift Voucher form submission</p><br>
       <p><strong>Name: </strong> ${giftContactName}</p><br>

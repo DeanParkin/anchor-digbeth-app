@@ -17,7 +17,7 @@ export default async function handler(req, res) {
   try {
     const emailRes = await transporter.sendMail({
       from: `${mailingListEmail}`,
-      to: "deanparkim1987@gmail.com",
+      to: "julian@theanchordigbeth.com",
       subject: `New Mailing List Submission from ${mailingListEmail}`,
       html: `<p>Please add this contact to the mailing list</p><br>
       <p><strong>Email: </strong> ${mailingListEmail}</p><br>`,
