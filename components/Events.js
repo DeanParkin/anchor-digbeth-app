@@ -9,6 +9,7 @@ import event5 from "../public/imgs/Events/LIVE_MUSIC_WEB.jpg";
 import event6 from "../public/imgs/Events/TRADE_WEB.jpg";
 
 const Events = () => {
+  const ImageCss = { maxWidth: "100%", height: "auto" };
   return (
     <>
       <div className="container text-center pt-3">
@@ -25,6 +26,7 @@ const Events = () => {
                 src={event1}
                 alt="The Anchor has a wide range of beer"
                 className="d-block w-100"
+                style={ImageCss}
                 //priority={true}
                 placeholder="blur"
                 // width={1350}
@@ -43,6 +45,7 @@ const Events = () => {
                 className="d-block w-100"
                 //priority={true}
                 placeholder="blur"
+                style={ImageCss}
                 // width={1350}
                 // height={600}
                 //objectFit="fill"
@@ -59,6 +62,7 @@ const Events = () => {
                 className="d-block w-100"
                 //priority={true}
                 placeholder="blur"
+                style={ImageCss}
                 // width={1350}
                 // height={600}
                 //objectFit="fill"
@@ -75,6 +79,7 @@ const Events = () => {
                 className="d-block w-100"
                 //priority={true}
                 placeholder="blur"
+                style={ImageCss}
                 // width={1350}
                 // height={600}
                 //objectFit="fill"
@@ -91,6 +96,7 @@ const Events = () => {
                 className="d-block w-100"
                 //priority={true}
                 placeholder="blur"
+                style={ImageCss}
                 // width={1350}
                 // height={600}
                 //objectFit="fill"
@@ -107,6 +113,7 @@ const Events = () => {
                 className="d-block w-100"
                 //priority={true}
                 placeholder="blur"
+                style={ImageCss}
                 // width={1350}
                 // height={600}
                 //objectFit="fill"

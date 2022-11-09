@@ -33,6 +33,7 @@ let imageArray = [
 ];
 
 const Carousel = () => {
+  const ImageCss = { maxWidth: "100%", height: "auto" };
   return (
     <>
       <div
@@ -70,6 +71,7 @@ const Carousel = () => {
               className="d-block w-100"
               priority={true}
               placeholder="blur"
+              style={ImageCss}
               // width={1350}
               // height={600}
               //objectFit="fill"
@@ -83,6 +85,7 @@ const Carousel = () => {
               alt="Front exterior of the Anchor"
               className="d-block w-100"
               priority={true}
+              style={ImageCss}
               //placeholder="blur"
               //objectFit="fill"
               //objectFit="cover"
@@ -97,6 +100,7 @@ const Carousel = () => {
               alt="Octopus art in the Anchor courtyard"
               className="d-block w-100"
               priority={true}
+              style={ImageCss}
               //placeholder="blur"
               //objectFit="fill"
 

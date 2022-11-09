@@ -8,36 +8,21 @@ import { useState, useEffect } from "react";
 // TODO - add the navbar logo
 
 export default function Nav({ children }) {
+  const ImageCss = { maxWidth: "100%", height: "auto" };
+
   const route = useRouter().route.slice(1);
   const router = useRouter();
 
   const [navOpen, setNavOpen] = useState(false);
 
-  let home =
-    route == ""
-      ? { class: "nav-link active", aria: "page", href: "/" }
-      : { class: "nav-link", aria: "", href: "/" };
-
-  let drinks =
-    route == "drinks"
-      ? { class: "nav-link active", aria: "page", href: "/" }
-      : { class: "nav-link", aria: "", href: "/" };
-  let events =
-    route == "events"
-      ? { class: "nav-link active", aria: "page", href: "/" }
-      : { class: "nav-link", aria: "", href: "/" };
-  let contact =
-    route == "contact"
-      ? { class: "nav-link active", aria: "page", href: "/" }
-      : { class: "nav-link", aria: "", href: "/" };
-  let gallery =
-    route == "gallery"
-      ? { class: "nav-link active", aria: "page", href: "/" }
-      : { class: "nav-link", aria: "", href: "/" };
-  let giftvoucher =
-    route == "giftvoucher"
-      ? { class: "nav-link active", aria: "page", href: "/" }
-      : { class: "nav-link", aria: "", href: "/" };
+  const navLinks = [
+    { name: "home", href: "/" },
+    { name: "drinks", href: "/drinks" },
+    { name: "gallery", href: "/gallery" },
+    { name: "events", href: "/events" },
+    { name: "gift voucher", href: "/giftvoucher" },
+    { name: "contact", href: "/contact" },
+  ];
 
   useEffect(() => {
     let navLinks = document.querySelectorAll(".nav-link");
@@ -98,13 +83,14 @@ export default function Nav({ children }) {
             <h1 className="m-0">
               <span hidden={true}>The Anchor Digbeth, Birmingham</span>
             </h1>
-            <Link href="/">
+            <Link href="/" legacyBehavior>
               <div style={{ width: "60px", height: "60px" }}>
                 <Image
                   src={logo}
                   alt="The Anchor Digbeth"
                   width={120}
                   height={120}
+                  style={ImageCss}
                   className="navbar-brand"
                   priority={true}
                 />
@@ -128,81 +114,26 @@ export default function Nav({ children }) {
           </button>
           <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
-              <li className="nav-item me-2">
-                <Link href="/">
-                  <a
-                    className={home.class}
-                    onClick={linkClick}
-                    //aria-current={home.aria}
-                    //aria-current="page"
-                  >
-                    HOME
-                  </a>
-                </Link>
-              </li>
-              <li
-                className="nav-item me-2"
-                //data-bs-toggle="collapse"
-              >
-                <Link href="/drinks">
-                  <a
-                    className={drinks.class}
-                    onClick={linkClick}
-                    //aria-current={home.aria}
-                    //aria-current="page"
-                  >
-                    Drinks
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item me-2">
-                <Link href="/gallery">
-                  <a
-                    className={gallery.class}
-                    onClick={linkClick}
-                    //aria-current={home.aria}
-                    //aria-current="page"
-                  >
-                    Gallery
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item me-2">
-                <Link href="/events">
-                  <a
-                    className={events.class}
-                    onClick={linkClick}
-                    //aria-current={home.aria}
-                    //aria-current="page"
-                  >
-                    Events
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item me-2">
-                <Link href="/giftvoucher">
-                  <a
-                    className={giftvoucher.class}
-                    onClick={linkClick}
-                    //aria-current={home.aria}
-                    //aria-current="page"
-                  >
-                    gift voucher
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item me-2">
-                <Link href="/contact">
-                  <a
-                    className={contact.class}
-                    onClick={linkClick}
-                    //aria-current={home.aria}
-                    //aria-current="page"
-                  >
-                    contact
-                  </a>
-                </Link>
-              </li>
+              {navLinks.map((link) => {
+                let x = link.href.slice(1);
+                let activeClass =
+                  x == route
+                    ? { class: "nav-link active" }
+                    : { class: "nav-link" };
+                return (
+                  <li className="nav-item me-2" key={link.name}>
+                    <Link
+                      href={link.href}
+                      className={activeClass.class}
+                      //aria-current={home.aria}
+                      //aria-current="page"
+                      onClick={linkClick}
+                    >
+                      {link.name}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

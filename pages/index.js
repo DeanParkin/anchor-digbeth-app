@@ -5,7 +5,6 @@ import ContactForm from "../components/ContactForm";
 import SEO from "../components/SEO";
 import GiftCard from "../components/GiftCard";
 import { useState } from "react";
-import Image from "next/image";
 
 export default function Home({ feed }) {
   let [numOfImages, setNumOfImages] = useState(6);
@@ -15,11 +14,11 @@ export default function Home({ feed }) {
   };
 
   const arr = feed.data.filter((item) => item.media_type === "IMAGE");
-  //console.log(arr);
+
   const images = arr.splice(0, numOfImages);
 
   return (
-    <div>
+    <>
       <SEO
         title="Home"
         description="The Anchor, Digbeth is a place of comfort to enjoy real ale, ciders, craft beers, wine, spirits and even cocktails, modern drinking in a traditional boozer."
@@ -28,7 +27,7 @@ export default function Home({ feed }) {
       <header className="text-light text-center container pt-3">
         <h2 className="fs-5 baskerville-font">
           Welcome To <br />
-          <span className="h2 text-primary">The Anchor Digbeth</span>
+          <span className="h1 text-primary">The Anchor Digbeth</span>
         </h2>
         <div className="d-flex justify-content-center">
           <p className="h2 text-primary baskerville-font"></p>
@@ -95,7 +94,7 @@ export default function Home({ feed }) {
           <ContactForm />
         </section>
       </main>
-    </div>
+    </>
   );
 }
 
