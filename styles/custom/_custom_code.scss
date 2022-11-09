@@ -83,6 +83,9 @@ div div.input-group input.newsletter-submit.btn {
     color: #000;
   }
 }
+.navbar-brand {
+  --bs-navbar-brand-padding-y: 0;
+}
 
 //================================================
 //Contact Form
