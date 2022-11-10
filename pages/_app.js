@@ -49,9 +49,10 @@ function SiteLoader() {
   const [siteLoad, setSiteLoad] = useState(true);
 
   useEffect(() => {
-    window.addEventListener("load", (e) => {
-      setTimeout(() => setSiteLoad(false), 1);
-    });
+    setTimeout(() => setSiteLoad(false), 500);
+    // window.addEventListener("load", (e) => {
+    //   setTimeout(() => setSiteLoad(false), 1);
+    // });
   }, []);
 
   return (

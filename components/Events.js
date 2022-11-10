@@ -10,6 +10,16 @@ import event6 from "../public/imgs/Events/TRADE_WEB.jpg";
 
 const Events = () => {
   const ImageCss = { maxWidth: "100%", height: "auto" };
+
+  const eventsArray = [
+    { name: "Free pool every Monday's", image: event1 },
+    { name: "2 for 1 cocktails every Wednesday", image: event2 },
+    { name: "Quiz Night every Thursday 7:30pm", image: event3 },
+    { name: "Friday fizz all day every week", image: event4 },
+    { name: "live music every Sunday 5:00-7:00pm", image: event5 },
+    { name: "Bab members only trade night", image: event6 },
+  ];
+
   return (
     <>
       <div className="container text-center pt-3">
@@ -20,108 +30,25 @@ const Events = () => {
       </div>
       <div className="container mt-4">
         <div className="row">
-          <div className="col-md-6">
-            <div className="card mb-2 border-primary">
-              <Image
-                src={event1}
-                alt="The Anchor has a wide range of beer"
-                className="d-block w-100"
-                style={ImageCss}
-                //priority={true}
-                placeholder="blur"
-                // width={1350}
-                // height={600}
-                //objectFit="fill"
-                //objectFit="cover"
-                layout="responsive"
-              />
+          {eventsArray.map((event, key) => (
+            <div className="col-md-6" key={key}>
+              <div className="card mb-2 border-primary">
+                <Image
+                  src={event.image}
+                  alt={event.name}
+                  className="d-block w-100"
+                  style={ImageCss}
+                  //priority={true}
+                  placeholder="blur"
+                  // width={1350}
+                  // height={600}
+                  //objectFit="fill"
+                  //objectFit="cover"
+                  layout="responsive"
+                />
+              </div>
             </div>
-          </div>
-          <div className="col-md-6">
-            <div className="card mb-2 border-primary">
-              <Image
-                src={event2}
-                alt="The Anchor has a wide range of beer"
-                className="d-block w-100"
-                //priority={true}
-                placeholder="blur"
-                style={ImageCss}
-                // width={1350}
-                // height={600}
-                //objectFit="fill"
-                //objectFit="cover"
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="card mb-2 border-primary">
-              <Image
-                src={event3}
-                alt="The Anchor has a wide range of beer"
-                className="d-block w-100"
-                //priority={true}
-                placeholder="blur"
-                style={ImageCss}
-                // width={1350}
-                // height={600}
-                //objectFit="fill"
-                //objectFit="cover"
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="card mb-2 border-primary">
-              <Image
-                src={event4}
-                alt="The Anchor has a wide range of beer"
-                className="d-block w-100"
-                //priority={true}
-                placeholder="blur"
-                style={ImageCss}
-                // width={1350}
-                // height={600}
-                //objectFit="fill"
-                //objectFit="cover"
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="card mb-2 border-primary">
-              <Image
-                src={event5}
-                alt="The Anchor has a wide range of beer"
-                className="d-block w-100"
-                //priority={true}
-                placeholder="blur"
-                style={ImageCss}
-                // width={1350}
-                // height={600}
-                //objectFit="fill"
-                //objectFit="cover"
-                layout="responsive"
-              />
-            </div>
-          </div>
-          <div className="col-md-6">
-            <div className="card mb-2 border-primary">
-              <Image
-                src={event6}
-                alt="The Anchor has a wide range of beer"
-                className="d-block w-100"
-                //priority={true}
-                placeholder="blur"
-                style={ImageCss}
-                // width={1350}
-                // height={600}
-                //objectFit="fill"
-                //objectFit="cover"
-                layout="responsive"
-              />
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </>
