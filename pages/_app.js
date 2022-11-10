@@ -49,7 +49,7 @@ function SiteLoader() {
   const [siteLoad, setSiteLoad] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setSiteLoad(false), 500);
+    setTimeout(() => setSiteLoad(false), 700);
     // window.addEventListener("load", (e) => {
     //   setTimeout(() => setSiteLoad(false), 1);
     // });

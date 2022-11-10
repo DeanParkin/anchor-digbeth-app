@@ -44,7 +44,7 @@ const Events = () => {
                   // height={600}
                   //objectFit="fill"
                   //objectFit="cover"
-                  layout="responsive"
+                  //layout="responsive"
                 />
               </div>
             </div>
