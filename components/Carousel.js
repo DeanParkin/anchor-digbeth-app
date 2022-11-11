@@ -72,11 +72,11 @@ const Carousel = () => {
               priority={true}
               placeholder="blur"
               style={ImageCss}
-              // width={1350}
-              // height={600}
+              width={1350}
+              height={600}
               //objectFit="fill"
               //objectFit="cover"
-              layout="responsive"
+              //layout="responsive"
             />
           </div>
           <div className="carousel-item">
@@ -86,10 +86,12 @@ const Carousel = () => {
               className="d-block w-100"
               priority={true}
               style={ImageCss}
+              width={1350}
+              height={600}
               //placeholder="blur"
               //objectFit="fill"
               //objectFit="cover"
-              layout="responsive"
+              //layout="responsive"
               // objectFit="cover"
             />
             {/*<img src="..." className="d-block w-100" alt="...">*/}
@@ -101,10 +103,12 @@ const Carousel = () => {
               className="d-block w-100"
               priority={true}
               style={ImageCss}
+              width={1350}
+              height={600}
               //placeholder="blur"
               //objectFit="fill"
 
-              layout="responsive"
+              //layout="responsive"
               //objectFit="cover"
             />
             {/*<img src="..." className="d-block w-100" alt="...">*/}
