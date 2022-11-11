@@ -24,6 +24,7 @@ const SEO = ({ title, description }) => {
 
         <meta property="og:locale" content="en_GB" />
         <meta name="author" content="Plan;D"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <link
           rel="apple-touch-icon"
@@ -43,7 +44,12 @@ const SEO = ({ title, description }) => {
           href="/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
       </Head>
     </>
   );
