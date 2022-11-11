@@ -1,9 +1,16 @@
-module.exports = async (phase, { defaultConfig }) => {
-  /**
-   * @type {import('next').NextConfig}
-   */
-  const nextConfig = {
-    reactStrictMode: true,
-  };
-  return nextConfig;
-};
+const withPWA = require("next-pwa")({
+  dest: "public",
+  register: true,
+  skipWaiting: true,
+  disable: process.env.NODE_ENV === "development",
+});
+
+/**
+ * @type {import('next').NextConfig}
+ */
+
+const nextConfig = withPWA({
+  reactStrictMode: true,
+});
+
+module.exports = nextConfig;
