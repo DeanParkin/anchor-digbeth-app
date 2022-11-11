@@ -73,18 +73,16 @@ function MyApp({ Component, pageProps }) {
     import("bootstrap/dist/js/bootstrap");
 
     if ("serviceWorker" in navigator) {
-      window.addEventListener("load", function () {
-        navigator.serviceWorker.register("/sw.js").then(
-          function (registration) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker
+          .register("/sw.js")
+          .then((reg) =>
             console.log(
               "Service Worker registration successful with scope: ",
-              registration.scope
-            );
-          },
-          function (err) {
-            console.log("Service Worker registration failed: ", err);
-          }
-        );
+              reg.scope
+            )
+          )
+          .catch((err) => console.log(`Service Worker Failed: ${err}`));
       });
     }
   }, []);
