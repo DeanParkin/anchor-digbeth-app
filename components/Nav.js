@@ -114,14 +114,14 @@ export default function Nav({ children }) {
           </button>
           <div className="collapse navbar-collapse" id="navbarToggler">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 text-uppercase">
-              {navLinks.map((link) => {
+              {navLinks.map((link, key) => {
                 let x = link.href.slice(1);
                 let activeClass =
                   x == route
                     ? { class: "nav-link active" }
                     : { class: "nav-link" };
                 return (
-                  <li className="nav-item me-2" key={link.name}>
+                  <li className="nav-item me-2" key={key}>
                     <Link
                       href={link.href}
                       className={activeClass.class}
