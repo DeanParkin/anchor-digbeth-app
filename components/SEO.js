@@ -16,8 +16,8 @@ const SEO = ({ title, description }) => {
         <meta property="og:description" content={description} />
         <meta property="og:image" content="https://www.theanchordigbeth.com/og-image.jpg" />
         <meta property="og:url" content={`https://www.theanchordigbeth.com${route.pathname}`} />
-
         <meta property="og:site_name" content={siteTitle} />
+        
         <meta property="twitter:card" content="summary" />
         <meta property="twitter:creator" content="Plan;D" />
         <meta property="twitter:title" content={pageTitle} />
