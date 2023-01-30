@@ -61,11 +61,6 @@ export default function Home({ feed }) {
                       className="card mb-2 border-primary ratio ratio-1x1"
                     >
                       <img
-                        //height={400}
-                        //width={400}
-                        //layout="fill"
-                        //placeholder="blur"
-                        //loader={imageLoader}
                         src={image.media_url}
                         alt={image.caption}
                         className="card-img"
