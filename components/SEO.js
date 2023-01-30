@@ -2,8 +2,14 @@ import React from "react";
 import Head from "next/dist/shared/lib/head";
 import {useRouter} from 'next/router';
 
+const baseUrl = {
+  development: "http://localhost:3000",
+  production: "https://www.theanchordigbeth.com",
+}[process.env.NODE_ENV]
+
 const SEO = ({ title, description }) => {
   let route = useRouter();
+
   const siteTitle = `The Anchor, Digbeth`;
   const pageTitle = `${siteTitle} | ${title}`;
   return (
@@ -14,8 +20,8 @@ const SEO = ({ title, description }) => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content="https://www.theanchordigbeth.com/og-image.jpg" />
-        <meta property="og:url" content={`https://www.theanchordigbeth.com${route.pathname}`} />
+        <meta property="og:image" content={`${baseUrl}/og-image.jpg`} />
+        <meta property="og:url" content={baseUrl + route.pathname} />
         <meta property="og:site_name" content={siteTitle} />
         
         <meta property="twitter:card" content="summary" />
