@@ -68,50 +68,35 @@ const Carousel = () => {
             <Image
               src={image1}
               alt="The Anchor has a wide range of beer"
-              className="d-block w-100"
+              className="d-block w-100 image-style"
               priority={true}
               placeholder="blur"
-              style={ImageCss}
+              //style={ImageCss}
               width={1350}
               height={600}
-              //objectFit="fill"
-              //objectFit="cover"
-              //layout="responsive"
             />
           </div>
           <div className="carousel-item">
             <Image
               src={image2}
               alt="Front exterior of the Anchor"
-              className="d-block w-100"
+              className="d-block w-100 image-style"
               priority={true}
-              style={ImageCss}
+              //style={ImageCss}
               width={1350}
               height={600}
-              //placeholder="blur"
-              //objectFit="fill"
-              //objectFit="cover"
-              //layout="responsive"
-              // objectFit="cover"
             />
-            {/*<img src="..." className="d-block w-100" alt="...">*/}
           </div>
           <div className="carousel-item">
             <Image
               src={image3}
               alt="Octopus art in the Anchor courtyard"
-              className="d-block w-100"
+              className="d-block w-100 image-style"
               priority={true}
-              style={ImageCss}
+              //style={ImageCss}
               width={1350}
               height={600}
-              //placeholder="blur"
-              //objectFit="fill"
-
-              //layout="responsive"
-              //objectFit="cover"
-            />
-            {/*<img src="..." className="d-block w-100" alt="...">*/}
+              />
           </div>
         </div>
         <button

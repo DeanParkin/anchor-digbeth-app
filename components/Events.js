@@ -9,7 +9,7 @@ import event5 from "../public/imgs/Events/LIVE_MUSIC_WEB.jpg";
 import event6 from "../public/imgs/Events/TRADE_WEB.jpg";
 
 const Events = () => {
-  const ImageCss = { maxWidth: "100%", height: "auto" };
+  //const ImageCss = { maxWidth: "100%", height: "auto" };
 
   const eventsArray = [
     { name: "Free pool every Monday's", image: event1 },
@@ -36,15 +36,9 @@ const Events = () => {
                 <Image
                   src={event.image}
                   alt={event.name}
-                  className="d-block w-100"
-                  style={ImageCss}
-                  //priority={true}
+                  className="d-block w-100 image-style"
+                  //style={ImageCss}
                   placeholder="blur"
-                  // width={1350}
-                  // height={600}
-                  //objectFit="fill"
-                  //objectFit="cover"
-                  //layout="responsive"
                 />
               </div>
             </div>

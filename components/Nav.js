@@ -4,11 +4,8 @@ import Footer from "../components/Footer";
 import logo from "../public/imgs/anchor-nav-logo-small.png";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
-// TODO - add the navbar links
-// TODO - add the navbar logo
 
 export default function Nav({ children }) {
-  const ImageCss = { maxWidth: "100%", height: "auto" };
 
   const route = useRouter().route.slice(1);
   const router = useRouter();
@@ -90,8 +87,7 @@ export default function Nav({ children }) {
                   alt="The Anchor Digbeth"
                   width={120}
                   height={120}
-                  style={ImageCss}
-                  className="navbar-brand"
+                  className="navbar-brand image-style"
                   priority={true}
                 />
               </div>
@@ -118,15 +114,15 @@ export default function Nav({ children }) {
                 let x = link.href.slice(1);
                 let activeClass =
                   x == route
-                    ? { class: "nav-link active" }
-                    : { class: "nav-link" };
+                    ? { class: "nav-link active", aria: "page" }
+                    : { class: "nav-link", aria: "false" };
+
                 return (
                   <li className="nav-item me-2" key={key}>
                     <Link
                       href={link.href}
                       className={activeClass.class}
-                      //aria-current={home.aria}
-                      //aria-current="page"
+                      aria-current={activeClass.aria}
                       onClick={linkClick}
                     >
                       {link.name}
