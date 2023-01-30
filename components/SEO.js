@@ -1,7 +1,6 @@
 import React from "react";
 import Head from "next/dist/shared/lib/head";
 import {useRouter} from 'next/router';
-import ogImage from "../public/og-image.jpg"
 
 const SEO = ({ title, description }) => {
   let route = useRouter();
@@ -15,8 +14,8 @@ const SEO = ({ title, description }) => {
         <meta property="og:type" content="website" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={description} />
-        <meta property="og:image" content="https://theanchordigbeth.com/og-image.jpg" />
-        <meta property="og:url" content={`https://theanchordigbeth.com${route.pathname}`} />
+        <meta property="og:image" content="https://www.theanchordigbeth.com/og-image.jpg" />
+        <meta property="og:url" content={`https://www.theanchordigbeth.com${route.pathname}`} />
 
         <meta property="og:site_name" content={siteTitle} />
         <meta property="twitter:card" content="summary" />
