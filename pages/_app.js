@@ -136,7 +136,7 @@ function MyApp({ Component, pageProps }) {
         containerClasses="alert alert-primary fixed-bottom d-sm-flex justify-content-between"
         contentClasses="text-capitalize text-center d-flex fs-6"
         buttonText="I Understand"
-        expires={1}
+        expires={30}
       >
         This site uses Cookies for performance improvements.
       </CookieConsent>

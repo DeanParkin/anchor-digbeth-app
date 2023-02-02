@@ -81,14 +81,12 @@ const Footer = () => {
 
             <div className="col-md-4 p-3"></div>
 
-            {/* <div className="col-md-4 address-container"> */}
             <address className="col-md-4 address-container m-0">
               THE ANCHOR, <br />
               308 BRADFORD STREET, <br />
               BIRMINGHAM, <br />
               B5 6ET
             </address>
-            {/* </div> */}
           </div>
           <div className="d-flex justify-content-center">
             <p className="text-center fs-5">
@@ -160,7 +158,7 @@ const Footer = () => {
                   RIGHTS RESERVED.
                 </span>
               </p>
-              <a
+              {/* <a
                 href="https://www.theanchordigbeth.com/privacy-policy"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -175,7 +173,7 @@ const Footer = () => {
                 className="privacy-policy-link mb-3"
               >
                 Terms &amp; Conditions
-              </a>
+              </a> */}
             </div>
             <div className="d-flex justify-content-center">
               <p className="text-center text-light pb-4">

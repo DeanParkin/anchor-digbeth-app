@@ -5,32 +5,32 @@ import image1 from "../public/imgs/BEER-TAPS-2.webp";
 import image2 from "../public/imgs/EXTERIOR.webp";
 import image3 from "../public/imgs/OCTOPUS.webp";
 
-let imageArray = [
-  {
-    src: image1,
-    alt: "Beer Taps",
-    width: 1120,
-    height: 630,
-    layout: "fill",
-    className: "carousel-image",
-  },
-  {
-    src: image2,
-    alt: "Exterior",
-    width: 1120,
-    height: 630,
-    layout: "fill",
-    className: "carousel-image",
-  },
-  {
-    src: image3,
-    alt: "Octopus",
-    width: 1120,
-    height: 630,
-    layout: "fill",
-    className: "carousel-image",
-  },
-];
+// let imageArray = [
+//   {
+//     src: image1,
+//     alt: "Beer Taps",
+//     width: 1120,
+//     height: 630,
+//     layout: "fill",
+//     className: "carousel-image",
+//   },
+//   {
+//     src: image2,
+//     alt: "Exterior",
+//     width: 1120,
+//     height: 630,
+//     layout: "fill",
+//     className: "carousel-image",
+//   },
+//   {
+//     src: image3,
+//     alt: "Octopus",
+//     width: 1120,
+//     height: 630,
+//     layout: "fill",
+//     className: "carousel-image",
+//   },
+// ];
 
 const Carousel = () => {
   const ImageCss = { maxWidth: "100%", height: "auto" };

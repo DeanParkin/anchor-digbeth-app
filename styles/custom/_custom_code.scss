@@ -1,5 +1,5 @@
 //
-//Pland Custom Code file for Bootstrap 5.2.0
+//PlanD Custom Code file for Bootstrap 5.3.0
 //
 //Contents
 //--------
@@ -35,10 +35,6 @@ button.btn {
   color: #000;
   border-color: $primary;
   --bs-btn-hover-border-color: $primary;
-  // &:hover {
-  //   background-color: #000;
-  //   color: $primary;
-  // }
   :not(.btn-check) + &:hover,
   &:first-child:hover {
     background-color: #000;
@@ -122,10 +118,8 @@ div div.input-group input.newsletter-submit.btn {
 }
 
 .opening-hours {
-  //text-transform: uppercase;
   font-family: "Proxima", sans-serif;
   display: table;
-  // font-size: 16px;
   white-space: nowrap;
   align-items: baseline;
 }
@@ -135,17 +129,13 @@ div div.input-group input.newsletter-submit.btn {
 }
 
 .social-icon {
-  //background-color: inherit;
   width: 3rem;
   height: 3rem;
-  //border-radius: 50%;
-  //font-size: 1.5rem;
   line-height: 7px;
   text-align: center;
-  //color: $primary;
-  //background: #8f8f8f;
   transition: all 0.35s ease-in-out;
 }
+
 .social-link {
   color: #fff;
   &:hover {
@@ -243,7 +233,6 @@ div div.input-group input.newsletter-submit.btn {
 }
 
 .nav-icon {
-  //margin: 1em;
   width: 2em;
 }
 
@@ -285,6 +274,7 @@ div div.input-group input.newsletter-submit.btn {
   object-fit: cover;
 }
 
+//for next Image
 .image-style {
   max-width: 100%;
   height: auto;

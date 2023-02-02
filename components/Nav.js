@@ -45,6 +45,8 @@ export default function Nav({ children }) {
     const updateWindowDimensions = () => {
       size = window.innerWidth;
     };
+
+    //works out which responsive mode the nav bar is in
     window.addEventListener("resize", () => {
       updateWindowDimensions();
       setAttr();
